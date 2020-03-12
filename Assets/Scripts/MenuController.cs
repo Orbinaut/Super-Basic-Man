@@ -6,7 +6,32 @@ using UnityEngine.SceneManagement;
 public class MenuController : MonoBehaviour
 {
     public void StartGame(){
-        SceneManager.LoadScene("Level");
+        SceneManager.LoadScene("Clear 1");
+    }
+
+    public void StartLevel1()
+    {
+        SceneManager.LoadScene("Level 1");
+    }
+
+    public void StartLevel2()
+    {
+        SceneManager.LoadScene("Level 2");
+    }
+
+    public void StartLevel3()
+    {
+        SceneManager.LoadScene("Level 3");
+    }
+
+    public void StartLevel4()
+    {
+        SceneManager.LoadScene("Level 4");
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("Start");
     }
 
     public void QuitGame(){

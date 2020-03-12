@@ -35,16 +35,21 @@ public class Enemy : MonoBehaviour
     }
 
     void Update(){
-        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 
-        if (target.position.x < transform.position.x && !flipped){
-            transform.Rotate(0f, 180f, 0f);
-            flipped = true;
-        }
-        else if (target.position.x > transform.position.x && flipped){
-            transform.Rotate(0f, 180f, 0f);
-            flipped = false;
-        }
+        if (target != null)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 
+            if (target.position.x < transform.position.x && !flipped)
+            {
+                transform.Rotate(0f, 180f, 0f);
+                flipped = true;
+            }
+            else if (target.position.x > transform.position.x && flipped)
+            {
+                transform.Rotate(0f, 180f, 0f);
+                flipped = false;
+            }
+        }
     }
 }

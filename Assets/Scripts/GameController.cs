@@ -56,9 +56,15 @@ public class GameController : MonoBehaviour
     }
 
     public void GameOver(){
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
         highscore.text = "Highscore: " + killCount;
         deathSound.Play();
+        Invoke("TryAgain", 2);
+    }
+
+    public void TryAgain()
+    {
+        SceneManager.LoadScene("Game Over");
     }
 
     void Update(){

@@ -11,13 +11,16 @@ public class CollectStuff : MonoBehaviour
     public AudioSource hurtSound;
     public TextMeshProUGUI countText;
     public GameController gameController;
-    public int healthPoints = 3;
+    public int healthPoints = 1;
     public int maxHealth = 3;
+    public int Lifes = 3;
 
     private int count;
-    public bool hasKey = false;
+    public int hasKey = 0;
 
     public GameObject thinkingBubble;
+
+    public string nextLevel;
 
     void Start(){
         count = 0;
@@ -39,16 +42,16 @@ public class CollectStuff : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Key"))
         {
-            hasKey = true;
+            hasKey++;
             thinkingBubble.gameObject.SetActive(false);
             Destroy(other.gameObject);
         }
         if (other.gameObject.CompareTag("Door"))
         {
-            if (hasKey)
+            if (hasKey == 4)
             {
                 Debug.Log("Level beendet.");
-                SceneManager.LoadScene("Zwischenscreen");
+                SceneManager.LoadScene(nextLevel);
             }
             else
             {
@@ -70,11 +73,27 @@ public class CollectStuff : MonoBehaviour
     }
 
     void Die(){
+        Lifes--;
         Destroy(gameObject);
-        gameController.GameOver(); 
+
+        if (Lifes <= 0)
+        {
+            gameController.GameOver();
+        }
+        else
+        {
+            Reload();
+        }
+    }
+
+    public void Reload()
+    {
+        int scene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(scene, LoadSceneMode.Single);
+        Time.timeScale = 1;
     }
 
     void SetCountText(){
-        countText.text = "Health: " + healthPoints;
+        countText.text = "Lifes: " + Lifes;
     }
 }
