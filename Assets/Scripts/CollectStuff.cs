@@ -15,6 +15,9 @@ public class CollectStuff : MonoBehaviour
     public int maxHealth = 3;
 
     private int count;
+    public bool hasKey = false;
+
+    public GameObject thinkingBubble;
 
     void Start(){
         count = 0;
@@ -33,6 +36,25 @@ public class CollectStuff : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy")){
             Hurt();
             SetCountText();
+        }
+        if (other.gameObject.CompareTag("Key"))
+        {
+            hasKey = true;
+            thinkingBubble.gameObject.SetActive(false);
+            Destroy(other.gameObject);
+        }
+        if (other.gameObject.CompareTag("Door"))
+        {
+            if (hasKey)
+            {
+                Debug.Log("Level beendet.");
+                SceneManager.LoadScene("Zwischenscreen");
+            }
+            else
+            {
+                Debug.Log("Schlüssel wird benötigt.");
+                thinkingBubble.gameObject.SetActive(true);
+            }
         }
     }
 
