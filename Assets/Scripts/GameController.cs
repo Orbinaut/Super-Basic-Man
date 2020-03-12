@@ -30,7 +30,7 @@ public class GameController : MonoBehaviour
         killCount = 0;
         highscore.text = "";
         int musicIndex = Random.Range(0,Music.Length);
-        Music[musicIndex].Play();
+        //Music[musicIndex].Play();
         UpdateScore();
     }
 
