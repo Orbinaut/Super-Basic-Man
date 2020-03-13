@@ -9,11 +9,13 @@ public class CollectStuff : MonoBehaviour
 {
     public AudioSource collectSound;
     public AudioSource hurtSound;
-    public TextMeshProUGUI countText;
+    public TextMeshProUGUI LifeCount;
+    public TextMeshProUGUI CoinCount;
     public GameController gameController;
     public int healthPoints = 1;
     public int maxHealth = 3;
     public int Lifes = 3;
+    public int coins = 0;
 
     private int count;
     public int hasKey = 0;
@@ -28,7 +30,7 @@ public class CollectStuff : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other){
-        if (other.gameObject.CompareTag("PickUp")){
+        if (other.gameObject.CompareTag("Battery")){
             Destroy(other.gameObject);
             collectSound.Play();
             if (healthPoints < maxHealth){
@@ -36,17 +38,29 @@ public class CollectStuff : MonoBehaviour
                 SetCountText();
             }
         }
-        if (other.gameObject.CompareTag("Enemy")){
-            Hurt();
+
+        else if (other.gameObject.CompareTag("Coin"))
+        {
+            Destroy(other.gameObject);
+            collectSound.Play();
+            coins++;
             SetCountText();
         }
-        if (other.gameObject.CompareTag("Key"))
+
+        else if (other.gameObject.CompareTag("Key"))
         {
             hasKey++;
             thinkingBubble.gameObject.SetActive(false);
             Destroy(other.gameObject);
         }
-        if (other.gameObject.CompareTag("Door"))
+
+        else if (other.gameObject.CompareTag("Enemy"))
+        {
+            Hurt();
+            SetCountText();
+        }
+
+        else if (other.gameObject.CompareTag("Door"))
         {
             if (hasKey == 4)
             {
@@ -69,6 +83,13 @@ public class CollectStuff : MonoBehaviour
     void Update(){
         if (healthPoints <= 0){
             Die();
+        }
+
+        if (coins == 5)
+        {
+            Lifes++;
+            coins = 0;
+            SetCountText();
         }
     }
 
@@ -94,6 +115,7 @@ public class CollectStuff : MonoBehaviour
     }
 
     void SetCountText(){
-        countText.text = "Lifes: " + Lifes;
+        LifeCount.text = "Lifes: " + Lifes;
+        CoinCount.text = "Coins: " + coins;
     }
 }
