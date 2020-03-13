@@ -11,11 +11,15 @@ public class CollectStuff : MonoBehaviour
     public AudioSource hurtSound;
     public TextMeshProUGUI LifeCount;
     public TextMeshProUGUI CoinCount;
+    public TextMeshProUGUI AmmoCount;
+    public TextMeshProUGUI keyCount;
+    public TextMeshProUGUI healthCount;
     public GameController gameController;
     public int healthPoints = 1;
     public int maxHealth = 3;
     public int Lifes = 3;
     public int coins = 0;
+    public int ammo = 50;
 
     private int count;
     public int hasKey = 0;
@@ -47,16 +51,39 @@ public class CollectStuff : MonoBehaviour
             SetCountText();
         }
 
+        else if (other.gameObject.CompareTag("1UP"))
+        {
+            Destroy(other.gameObject);
+            collectSound.Play();
+            Lifes++;
+            SetCountText();
+        }
+
+        else if (other.gameObject.CompareTag("Ammo"))
+        {
+            Destroy(other.gameObject);
+            collectSound.Play();
+            ammo += 25;
+            SetCountText();
+        }
+
         else if (other.gameObject.CompareTag("Key"))
         {
             hasKey++;
             thinkingBubble.gameObject.SetActive(false);
             Destroy(other.gameObject);
+            SetCountText();
         }
 
         else if (other.gameObject.CompareTag("Enemy"))
         {
             Hurt();
+            SetCountText();
+        }
+
+        else if (other.gameObject.CompareTag("Lethal"))
+        {
+            Die();
             SetCountText();
         }
 
@@ -107,6 +134,15 @@ public class CollectStuff : MonoBehaviour
         }
     }
 
+    public void ShootAmmo()
+    {
+        ammo--;
+        SetCountText();
+    }
+
+
+
+
     public void Reload()
     {
         int scene = SceneManager.GetActiveScene().buildIndex;
@@ -117,5 +153,9 @@ public class CollectStuff : MonoBehaviour
     void SetCountText(){
         LifeCount.text = "Lifes: " + Lifes;
         CoinCount.text = "Coins: " + coins;
+        AmmoCount.text = "Ammo: " + ammo;
+        keyCount.text = "Keys: " + hasKey;
+        healthCount.text = "Health: " + healthPoints;
+
     }
 }

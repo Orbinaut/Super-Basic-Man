@@ -10,6 +10,9 @@ TagManager:
   - Door
   - Battery
   - Coin
+  - Ammo
+  - 1UP
+  - Lethal
   layers:
   - Default
   - TransparentFX

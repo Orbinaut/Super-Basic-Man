@@ -52,7 +52,7 @@ public class GameController : MonoBehaviour
     }
 
     void UpdateScore(){
-        enemyCountText.text = "Kills: " + killCount;
+        enemyCountText.text = "Score: " + killCount;
     }
 
     public void GameOver(){
