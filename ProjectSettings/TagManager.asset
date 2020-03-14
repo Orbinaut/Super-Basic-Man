@@ -13,6 +13,7 @@ TagManager:
   - Ammo
   - 1UP
   - Lethal
+  - UI
   layers:
   - Default
   - TransparentFX

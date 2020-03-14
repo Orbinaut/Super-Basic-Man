@@ -14,10 +14,8 @@ public class GameController : MonoBehaviour
     public int spawnY = 9;
     public int enemyCount = 10;
     public int spawnWait = 3;
-    public int killCount = 0;
 
     public TextMeshProUGUI enemyCountText;
-    public TextMeshProUGUI highscore;
 
     public AudioSource deathSound;
     public AudioSource destroySound;
@@ -27,11 +25,8 @@ public class GameController : MonoBehaviour
 
     void Start(){
         StartCoroutine(SpawnEnemies());
-        killCount = 0;
-        highscore.text = "";
         int musicIndex = Random.Range(0,Music.Length);
         //Music[musicIndex].Play();
-        UpdateScore();
     }
 
     IEnumerator SpawnEnemies()
@@ -45,19 +40,7 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void AddScore (int kill)
-    {
-        killCount += kill;
-        UpdateScore ();
-    }
-
-    void UpdateScore(){
-        enemyCountText.text = "Score: " + killCount;
-    }
-
     public void GameOver(){
-        //Time.timeScale = 0f;
-        highscore.text = "Highscore: " + killCount;
         deathSound.Play();
         Invoke("TryAgain", 2);
     }
@@ -65,12 +48,5 @@ public class GameController : MonoBehaviour
     public void TryAgain()
     {
         SceneManager.LoadScene("Game Over");
-    }
-
-    void Update(){
-        if (Input.GetButtonDown("Restart")){
-            SceneManager.LoadScene("Level");
-            Time.timeScale = 1f;
-        }
     }
 }

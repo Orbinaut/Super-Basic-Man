@@ -28,7 +28,6 @@ public class Enemy : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other){
             if (other.gameObject.CompareTag("Bullet")){
                 Instantiate(battery, transform.position, Quaternion.identity);
-                gameController.AddScore(1);
                 gameController.destroySound.Play();
                 Destroy(gameObject);
             }

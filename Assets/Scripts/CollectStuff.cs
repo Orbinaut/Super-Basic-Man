@@ -9,7 +9,6 @@ public class CollectStuff : MonoBehaviour
 {
     public AudioSource collectSound;
     public AudioSource hurtSound;
-    public TextMeshProUGUI LifeCount;
     public TextMeshProUGUI CoinCount;
     public TextMeshProUGUI AmmoCount;
     public TextMeshProUGUI keyCount;
@@ -17,9 +16,8 @@ public class CollectStuff : MonoBehaviour
     public GameController gameController;
     public int healthPoints = 1;
     public int maxHealth = 3;
-    public int Lifes = 3;
     public int coins = 0;
-    public int ammo = 50;
+    public int ammo = 20;
 
     private int count;
     public int hasKey = 0;
@@ -55,7 +53,8 @@ public class CollectStuff : MonoBehaviour
         {
             Destroy(other.gameObject);
             collectSound.Play();
-            Lifes++;
+            maxHealth = 4;
+            healthPoints = 4;
             SetCountText();
         }
 
@@ -63,7 +62,7 @@ public class CollectStuff : MonoBehaviour
         {
             Destroy(other.gameObject);
             collectSound.Play();
-            ammo += 25;
+            ammo += 10;
             SetCountText();
         }
 
@@ -112,26 +111,17 @@ public class CollectStuff : MonoBehaviour
             Die();
         }
 
-        if (coins == 5)
+        if (coins == 10)
         {
-            Lifes++;
             coins = 0;
             SetCountText();
         }
     }
 
-    void Die(){
-        Lifes--;
+    void Die()
+    {
         Destroy(gameObject);
-
-        if (Lifes <= 0)
-        {
-            gameController.GameOver();
-        }
-        else
-        {
-            Reload();
-        }
+        Reload();
     }
 
     public void ShootAmmo()
@@ -139,9 +129,6 @@ public class CollectStuff : MonoBehaviour
         ammo--;
         SetCountText();
     }
-
-
-
 
     public void Reload()
     {
@@ -151,7 +138,6 @@ public class CollectStuff : MonoBehaviour
     }
 
     void SetCountText(){
-        LifeCount.text = "Lifes: " + Lifes;
         CoinCount.text = "Coins: " + coins;
         AmmoCount.text = "Ammo: " + ammo;
         keyCount.text = "Keys: " + hasKey;
