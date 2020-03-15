@@ -12,6 +12,7 @@ public class Weapon : MonoBehaviour
     public AudioSource arrowSound;
 
     private CollectStuff collectScript;
+    private CharacterController2D controllerScript;
 
     void Start()
     {
@@ -19,10 +20,15 @@ public class Weapon : MonoBehaviour
         if (playerObject != null)
         {
             collectScript = playerObject.GetComponent<CollectStuff>();
+            controllerScript = playerObject.GetComponent<CharacterController2D>();
         }
         if (collectScript == null)
         {
             Debug.Log("Cannot find 'CollectStuff' script");
+        }
+        if (controllerScript == null)
+        {
+            Debug.Log("Cannot find 'CharacterController2D' script");
         }
     }
 
@@ -40,7 +46,7 @@ public class Weapon : MonoBehaviour
             collectScript.ShootAmmo();
         }
 
-        if (Input.GetButtonDown("ShootBall") && collectScript.ammo > 0)
+        if (Input.GetButtonDown("ShootBall") && collectScript.ammo > 0 && controllerScript.m_Grounded)
         {
             BouncyBall();
             collectScript.ShootAmmo();

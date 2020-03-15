@@ -14,6 +14,7 @@ TagManager:
   - 1UP
   - Lethal
   - UI
+  - Parent
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - 
   - Player
   - Post Processing
-  - 
+  - Enemy
   - 
   - 
   - 

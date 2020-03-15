@@ -13,13 +13,11 @@ public class CollectStuff : MonoBehaviour
     public TextMeshProUGUI AmmoCount;
     public TextMeshProUGUI keyCount;
     public TextMeshProUGUI healthCount;
-    public GameController gameController;
     public int healthPoints = 1;
     public int maxHealth = 3;
     public int coins = 0;
     public int ammo = 20;
 
-    private int count;
     public int hasKey = 0;
 
     public GameObject thinkingBubble;
@@ -27,7 +25,6 @@ public class CollectStuff : MonoBehaviour
     public string nextLevel;
 
     void Start(){
-        count = 0;
         SetCountText();
     }
 
@@ -142,6 +139,5 @@ public class CollectStuff : MonoBehaviour
         AmmoCount.text = "Ammo: " + ammo;
         keyCount.text = "Keys: " + hasKey;
         healthCount.text = "Health: " + healthPoints;
-
     }
 }

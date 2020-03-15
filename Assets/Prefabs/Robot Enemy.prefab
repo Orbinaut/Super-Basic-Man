@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3501016861965654764}
   - component: {fileID: 119681908304295084}
   - component: {fileID: 1286621614611411000}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Robot Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -187,6 +187,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battery: {fileID: 819782663826092501, guid: 59e4862cdcdea4f199329fe2ea4a1e7f, type: 3}
+  items:
+  - {fileID: 819782663826092501, guid: 59e4862cdcdea4f199329fe2ea4a1e7f, type: 3}
+  - {fileID: 6453301174112151916, guid: 0f9fc649d943b405aa1aac5f9a86bbac, type: 3}
+  - {fileID: 1911277947194426647, guid: abfe1fffd42cb40f7accde94ab288dfc, type: 3}
+  healthPoints: 5
 --- !u!1 &5255801956232072082
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,7 +201,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5255801956232072083}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ground Detection
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
