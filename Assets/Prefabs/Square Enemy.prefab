@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: -1927920383
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 7aadfeea6fba642c98e2ce9b9bea91fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 73e0d63f81c1a4e02b4062cafa426ed4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  distance: 2
+  distance: 1
   groundDetection: {fileID: 2022329138484597366}
 --- !u!114 &5472184819614503906
 MonoBehaviour:
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items:
-  - {fileID: 4158329313375432077, guid: 061323ea5fad44f168c56304ae88e3e7, type: 3}
+  - {fileID: 819782663826092501, guid: 59e4862cdcdea4f199329fe2ea4a1e7f, type: 3}
   - {fileID: 6453301174112151916, guid: 0f9fc649d943b405aa1aac5f9a86bbac, type: 3}
   - {fileID: 1911277947194426647, guid: abfe1fffd42cb40f7accde94ab288dfc, type: 3}
   healthPoints: 3
