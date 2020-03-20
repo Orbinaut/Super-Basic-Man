@@ -9,32 +9,30 @@ public class CollectStuff : MonoBehaviour
 {
     public AudioSource collectSound;
     public AudioSource hurtSound;
-    public TextMeshProUGUI CoinCount;
-    public TextMeshProUGUI AmmoCount;
-    public TextMeshProUGUI keyCount;
-    public TextMeshProUGUI healthCount;
     public int healthPoints = 1;
     public int maxHealth = 3;
     public int coins = 0;
     public int ammo = 20;
 
-    public int hasKey = 0;
+    public bool hasKey = false;
+    public bool hasBouncer = false;
+    public bool hasArrow = false;
+    public bool hasGun = false;
 
-    public GameObject thinkingBubble;
-
-    public string nextLevel;
+    public GameObject keyIcon;
+    public GameObject[] healthPointSlots;
+    //public GameObject[] healthPointsGreen;
 
     void Start(){
-        SetCountText();
     }
 
     void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.CompareTag("Battery")){
             Destroy(other.gameObject);
             collectSound.Play();
-            if (healthPoints < maxHealth){
+            if (healthPoints < maxHealth)
+            {
                 healthPoints++;
-                SetCountText();
             }
         }
 
@@ -43,58 +41,38 @@ public class CollectStuff : MonoBehaviour
             Destroy(other.gameObject);
             collectSound.Play();
             coins++;
-            SetCountText();
         }
 
         else if (other.gameObject.CompareTag("1UP"))
         {
             Destroy(other.gameObject);
             collectSound.Play();
-            maxHealth = 4;
-            healthPoints = 4;
-            SetCountText();
+            maxHealth++;
+            healthPoints = maxHealth;
         }
 
         else if (other.gameObject.CompareTag("Ammo"))
         {
             Destroy(other.gameObject);
             collectSound.Play();
-            ammo += 10;
-            SetCountText();
+            ammo += Random.Range(5,25);
         }
 
         else if (other.gameObject.CompareTag("Key"))
         {
-            hasKey++;
-            thinkingBubble.gameObject.SetActive(false);
+            hasKey = true;
             Destroy(other.gameObject);
-            SetCountText();
+            keyIcon.gameObject.SetActive(true);
         }
 
         else if (other.gameObject.CompareTag("Enemy"))
         {
             Hurt();
-            SetCountText();
         }
 
         else if (other.gameObject.CompareTag("Lethal"))
         {
             Die();
-            SetCountText();
-        }
-
-        else if (other.gameObject.CompareTag("Door"))
-        {
-            if (hasKey == 4)
-            {
-                Debug.Log("Level beendet.");
-                SceneManager.LoadScene(nextLevel);
-            }
-            else
-            {
-                Debug.Log("Schlüssel wird benötigt.");
-                thinkingBubble.gameObject.SetActive(true);
-            }
         }
     }
 
@@ -111,8 +89,11 @@ public class CollectStuff : MonoBehaviour
         if (coins == 10)
         {
             coins = 0;
-            SetCountText();
         }
+
+        healthPointSlots[maxHealth-4].gameObject.SetActive(true);
+
+        //healthPointsGreen[healthPoints - 1].gameObject.SetActive(true);
     }
 
     void Die()
@@ -124,7 +105,6 @@ public class CollectStuff : MonoBehaviour
     public void ShootAmmo()
     {
         ammo--;
-        SetCountText();
     }
 
     public void Reload()
@@ -132,12 +112,5 @@ public class CollectStuff : MonoBehaviour
         int scene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(scene, LoadSceneMode.Single);
         Time.timeScale = 1;
-    }
-
-    void SetCountText(){
-        CoinCount.text = "Coins: " + coins;
-        AmmoCount.text = "Ammo: " + ammo;
-        keyCount.text = "Keys: " + hasKey;
-        healthCount.text = "Health: " + healthPoints;
     }
 }

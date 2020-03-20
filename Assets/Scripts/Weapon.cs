@@ -34,19 +34,19 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && collectScript.ammo > 0)
+        if (Input.GetButtonDown("Fire1") && collectScript.ammo > 0 && collectScript.hasGun)
         {
             Shoot();
             collectScript.ShootAmmo();
         }
 
-        if (Input.GetButtonDown("Arrow") && collectScript.ammo > 0)
+        if (Input.GetButtonDown("Arrow") && collectScript.ammo > 0 && collectScript.hasArrow)
         {
             Arrow();
             collectScript.ShootAmmo();
         }
 
-        if (Input.GetButtonDown("ShootBall") && collectScript.ammo > 0 && controllerScript.m_Grounded)
+        if (Input.GetButtonDown("ShootBall") && collectScript.ammo > 0 && controllerScript.m_Grounded && collectScript.hasBouncer)
         {
             BouncyBall();
             collectScript.ShootAmmo();

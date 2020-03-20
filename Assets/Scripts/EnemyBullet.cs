@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class EnemyBullet : MonoBehaviour
 {
-    public float speed;
+    public float speed = 20f;
+    public Rigidbody2D rb;
 
-    void Update()
+    void Start()
     {
-        transform.Translate(Vector2.left * speed * Time.deltaTime);
+        rb.velocity = transform.right * speed;
     }
 
     void OnTriggerEnter2D(Collider2D collider)

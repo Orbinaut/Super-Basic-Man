@@ -6,13 +6,26 @@ public class Shootable : MonoBehaviour
 {
     public GameObject[] items;
 
-    public int healthPoints;
+    private int healthPoints;
+    public int maxHealth;
+    public int minHealth;
+
+    Renderer rend;
+    Color color;
+
+    private void Start()
+    {
+        rend = GetComponent<Renderer>();
+        color = rend.material.color;
+        healthPoints = Random.Range(minHealth, maxHealth);
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Bullet"))
         {
             healthPoints--;
+            StartCoroutine("HurtAnimation");
 
             if (healthPoints <= 0)
             {
@@ -21,5 +34,14 @@ public class Shootable : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+    }
+
+    IEnumerator HurtAnimation()
+    {
+        color.a = 0.5f;
+        rend.material.color = color;
+        yield return new WaitForSeconds(0.05f);
+        color.a = 1f;
+        rend.material.color = color;
     }
 }

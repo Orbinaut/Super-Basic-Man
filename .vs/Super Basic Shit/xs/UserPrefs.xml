@@ -1,19 +1,21 @@
 ﻿<Properties StartupConfiguration="{E5DEE435-5DFD-4154-5BC5-4F089A46A3C7}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Parenting.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CollectStuff.cs">
     <Files>
-      <File FileName="Assets/Scripts/MenuController.cs" Line="40" Column="2" />
-      <File FileName="Assets/Scripts/CollectStuff.cs" Line="49" Column="53" />
-      <File FileName="Assets/Scripts/Invulnerable.cs" Line="44" Column="2" />
-      <File FileName="Assets/Scripts/Weapon.cs" Line="33" Column="6" />
-      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="26" Column="49" />
-      <File FileName="Assets/Scripts/CharacterController2D.cs" Line="3" Column="1" />
-      <File FileName="Assets/Scripts/Bullet.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PauseMenu.cs" />
+      <File FileName="Assets/Scripts/MenuController.cs" Line="29" Column="43" />
+      <File FileName="Assets/Scripts/CollectStuff.cs" Line="116" Column="2" />
+      <File FileName="Assets/Scripts/Weapon.cs" Line="43" Column="94" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" />
+      <File FileName="Assets/Scripts/CharacterController2D.cs" />
+      <File FileName="Assets/Scripts/Bullet.cs" />
+      <File FileName="Assets/Scripts/PauseMenu.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Patrol.cs" />
-      <File FileName="Assets/Scripts/EnemyBullet.cs" />
-      <File FileName="Assets/Scripts/Shootable.cs" Line="25" Column="2" />
+      <File FileName="Assets/Scripts/EnemyBullet.cs" Line="24" Column="2" />
+      <File FileName="Assets/Scripts/Invulnerable.cs" />
+      <File FileName="Assets/Scripts/Shootable.cs" Line="11" Column="26" />
       <File FileName="Assets/Scripts/Canon.cs" />
-      <File FileName="Assets/Scripts/Parenting.cs" Line="22" Column="2" />
+      <File FileName="Assets/Scripts/Parenting.cs" />
+      <File FileName="Assets/Message.cs" Line="20" Column="2" />
+      <File FileName="Assets/Chest.cs" Line="18" Column="71" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,7 +23,7 @@
           <Node name="Super Basic Shit" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Parenting.cs" selected="True" />
+                <Node name="CollectStuff.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -31,7 +33,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f981b37e-946a-455d-bf13-6ec10c86e298" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="26a3657d-a85e-4362-8b7c-7cf8bd2d79c6" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

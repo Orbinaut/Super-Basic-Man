@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
+    private void Start()
+    {
+        Cursor.visible = false;
+    }
+
     public void StartGame(){
         SceneManager.LoadScene("Map 1");
     }
