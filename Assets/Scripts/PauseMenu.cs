@@ -14,7 +14,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.JoystickButton9)){
+        if (Input.GetButtonDown("Pause")){
             if (gameIsPaused){
                 Resume();
             }

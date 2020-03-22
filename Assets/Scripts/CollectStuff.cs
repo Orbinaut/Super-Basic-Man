@@ -7,21 +7,22 @@ using TMPro;
 
 public class CollectStuff : MonoBehaviour
 {
-    public AudioSource collectSound;
+    public AudioSource ammoSound;
+    public AudioSource coinSound;
+    public AudioSource keySound;
     public AudioSource hurtSound;
     public int healthPoints = 1;
     public int maxHealth = 3;
     public int coins = 0;
+    public int tenCoins = 0;
     public int ammo = 20;
+    public int maxAmmo = 99;
 
-    public bool hasKey = false;
-    public bool hasBouncer = false;
-    public bool hasArrow = false;
-    public bool hasGun = false;
+    public int hasKey = 0;
+    public int weaponLevel = 0;
 
     public GameObject keyIcon;
     public GameObject[] healthPointSlots;
-    //public GameObject[] healthPointsGreen;
 
     void Start(){
     }
@@ -29,7 +30,7 @@ public class CollectStuff : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.CompareTag("Battery")){
             Destroy(other.gameObject);
-            collectSound.Play();
+            ammoSound.Play();
             if (healthPoints < maxHealth)
             {
                 healthPoints++;
@@ -39,40 +40,39 @@ public class CollectStuff : MonoBehaviour
         else if (other.gameObject.CompareTag("Coin"))
         {
             Destroy(other.gameObject);
-            collectSound.Play();
+            coinSound.Play();
             coins++;
         }
 
         else if (other.gameObject.CompareTag("1UP"))
         {
             Destroy(other.gameObject);
-            collectSound.Play();
+            ammoSound.Play();
             maxHealth++;
             healthPoints = maxHealth;
         }
 
         else if (other.gameObject.CompareTag("Ammo"))
         {
-            Destroy(other.gameObject);
-            collectSound.Play();
-            ammo += Random.Range(5,25);
+            if (ammo < maxAmmo)
+            {
+                Destroy(other.gameObject);
+                ammoSound.Play();
+                ammo += Random.Range(5,25);
+            }
         }
 
         else if (other.gameObject.CompareTag("Key"))
         {
-            hasKey = true;
             Destroy(other.gameObject);
             keyIcon.gameObject.SetActive(true);
+            keySound.Play();
+            hasKey++;
         }
 
         else if (other.gameObject.CompareTag("Enemy"))
         {
             Hurt();
-        }
-
-        else if (other.gameObject.CompareTag("Lethal"))
-        {
-            Die();
         }
     }
 
@@ -89,11 +89,15 @@ public class CollectStuff : MonoBehaviour
         if (coins == 10)
         {
             coins = 0;
+            tenCoins++;
+        }
+
+        if (tenCoins == 10)
+        {
+            tenCoins = 0;
         }
 
         healthPointSlots[maxHealth-4].gameObject.SetActive(true);
-
-        //healthPointsGreen[healthPoints - 1].gameObject.SetActive(true);
     }
 
     void Die()

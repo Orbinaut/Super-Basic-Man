@@ -5,68 +5,70 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     public Transform firePoint;
-    public GameObject bulletPrefab;
-    public GameObject arrowPrefab;
-    public GameObject bouncyBallPrefab;
+    public GameObject bullet;
+    public GameObject arrow;
+    public GameObject bouncer;
     public AudioSource shotSound;
     public AudioSource arrowSound;
+
+    public float shootingInaccuracy = 5.0f;
 
     private CollectStuff collectScript;
     private CharacterController2D controllerScript;
 
     void Start()
     {
-        GameObject playerObject = GameObject.FindWithTag("Player");
-        if (playerObject != null)
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
         {
-            collectScript = playerObject.GetComponent<CollectStuff>();
-            controllerScript = playerObject.GetComponent<CharacterController2D>();
+            collectScript = player.GetComponent<CollectStuff>();
+            controllerScript = player.GetComponent<CharacterController2D>();
         }
         if (collectScript == null)
         {
-            Debug.Log("Cannot find 'CollectStuff' script");
+            Debug.Log("Can't find the 'CollectStuff' script");
         }
         if (controllerScript == null)
         {
-            Debug.Log("Cannot find 'CharacterController2D' script");
+            Debug.Log("Can't find the 'CharacterController2D' script");
         }
     }
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && collectScript.ammo > 0 && collectScript.hasGun)
+        if (Input.GetButtonDown("Shoot") && collectScript.ammo > 0 && collectScript.weaponLevel >= 1)
         {
             Shoot();
-            collectScript.ShootAmmo();
+        }
+        if (Input.GetButtonDown("Bouncer") && collectScript.ammo > 0 && controllerScript.m_Grounded && collectScript.weaponLevel >= 2)
+        {
+            Bouncer();
         }
 
-        if (Input.GetButtonDown("Arrow") && collectScript.ammo > 0 && collectScript.hasArrow)
+        if (Input.GetButtonDown("Arrow") && collectScript.ammo > 0 && collectScript.weaponLevel >= 3)
         {
             Arrow();
-            collectScript.ShootAmmo();
-        }
-
-        if (Input.GetButtonDown("ShootBall") && collectScript.ammo > 0 && controllerScript.m_Grounded && collectScript.hasBouncer)
-        {
-            BouncyBall();
-            collectScript.ShootAmmo();
         }
     }
 
     void Shoot(){
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        //Instantiate(bullet, firePoint.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(-shootingInaccuracy, shootingInaccuracy)));
+        Instantiate(bullet, firePoint.position, firePoint.rotation);
         shotSound.Play();
+        collectScript.ShootAmmo();
     }
 
     void Arrow()
     {
-        Instantiate(arrowPrefab, firePoint.position, firePoint.rotation);
+        Instantiate(arrow, firePoint.position, firePoint.rotation);
         arrowSound.Play();
+        collectScript.ShootAmmo();
     }
 
-    void BouncyBall()
+    void Bouncer()
     {
-        Instantiate(bouncyBallPrefab, firePoint.position, firePoint.rotation);
+        Instantiate(bouncer, firePoint.position, firePoint.rotation);
         shotSound.Play();
+        collectScript.ShootAmmo();
     }
 }

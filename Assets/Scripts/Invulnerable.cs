@@ -11,14 +11,14 @@ public class Invulnerable : MonoBehaviour
 
     void Start()
     {
-        GameObject playerObject = GameObject.FindWithTag("Player");
-        if (playerObject != null)
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
         {
-            collectScript = playerObject.GetComponent<CollectStuff>();
+            collectScript = player.GetComponent<CollectStuff>();
         }
         if (collectScript == null)
         {
-            Debug.Log("Cannot find 'CollectStuff' script");
+            Debug.Log("Can't find the 'CollectStuff' script");
         }
 
         rend = GetComponent<Renderer>();

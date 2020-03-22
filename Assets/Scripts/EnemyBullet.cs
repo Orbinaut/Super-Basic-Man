@@ -7,6 +7,8 @@ public class EnemyBullet : MonoBehaviour
     public float speed = 20f;
     public Rigidbody2D rb;
 
+    public GameObject impact;
+
     void Start()
     {
         rb.velocity = transform.right * speed;
@@ -14,6 +16,7 @@ public class EnemyBullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
+        Instantiate(impact, transform.position, transform.rotation);
         Destroy(gameObject);
     }
 

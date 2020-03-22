@@ -15,6 +15,10 @@ TagManager:
   - Lethal
   - UI
   - Parent
+  - Start
+  - Quit
+  - Credits
+  - RetroLook
   layers:
   - Default
   - TransparentFX
@@ -54,4 +58,7 @@ TagManager:
     locked: 0
   - name: Level
     uniqueID: 2367046913
+    locked: 0
+  - name: GUI
+    uniqueID: 1746403497
     locked: 0

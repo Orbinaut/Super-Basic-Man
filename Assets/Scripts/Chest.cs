@@ -5,21 +5,27 @@ using UnityEngine;
 public class Chest : MonoBehaviour
 {
     public GameObject message;
-    public GameObject keyMessage;
     public GameObject icon;
+    public GameObject keyMessage;
+    public GameObject keyIcon;
+    public GameObject openChest;
+
+    public AudioSource keyNeeded;
+
+    public int keyNumber;
 
     private CollectStuff collectScript;
 
     void Start()
     {
-        GameObject playerObject = GameObject.FindWithTag("Player");
-        if (playerObject != null)
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
         {
-            collectScript = playerObject.GetComponent<CollectStuff>();
+            collectScript = player.GetComponent<CollectStuff>();
         }
         if (collectScript == null)
         {
-            Debug.Log("Cannot find 'CollectStuff' script");
+            Debug.Log("Can't find the 'CollectStuff' script");
         }
     }
 
@@ -27,17 +33,19 @@ public class Chest : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            if (collectScript.hasKey)
+            if (collectScript.hasKey == keyNumber)
             {
                 message.gameObject.SetActive(true);
                 icon.gameObject.SetActive(true);
-                collectScript.hasBouncer = true;
-                collectScript.hasArrow = true;
-                collectScript.hasGun = true;
+                collectScript.weaponLevel++;
+                keyIcon.gameObject.SetActive(false);
+                Instantiate(openChest, gameObject.transform.position, gameObject.transform.rotation);
+                Destroy(gameObject);
             }
             else
             {
                 keyMessage.gameObject.SetActive(true);
+                keyNeeded.Play();
             }
         }
     }

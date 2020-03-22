@@ -124,6 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: -10
   rb: {fileID: -8767587417753666655}
+  impact: {fileID: 5691685120466093509, guid: 23e12b67bba2b48a8b6043a4297ed1fd, type: 3}
 --- !u!50 &-8767587417753666655
 Rigidbody2D:
   serializedVersion: 4
