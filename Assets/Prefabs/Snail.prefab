@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.8
-  distance: 2
+  distance: 1
   groundDetection: {fileID: 2268431549929644676}
 --- !u!1 &2268431549929644675
 GameObject:
