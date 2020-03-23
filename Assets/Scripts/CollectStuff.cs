@@ -1,9 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using TMPro;
 
 public class CollectStuff : MonoBehaviour
 {
@@ -11,6 +8,7 @@ public class CollectStuff : MonoBehaviour
     public AudioSource coinSound;
     public AudioSource keySound;
     public AudioSource hurtSound;
+    public AudioSource deathSound;
     public int healthPoints = 1;
     public int maxHealth = 3;
     public int coins = 0;
@@ -23,6 +21,10 @@ public class CollectStuff : MonoBehaviour
 
     public GameObject keyIcon;
     public GameObject[] healthPointSlots;
+
+    public GameObject deathScreen;
+
+    public bool dead = false;
 
     void Start(){
     }
@@ -67,7 +69,6 @@ public class CollectStuff : MonoBehaviour
             Destroy(other.gameObject);
             keyIcon.gameObject.SetActive(true);
             keySound.Play();
-            hasKey++;
         }
 
         else if (other.gameObject.CompareTag("Enemy"))
@@ -78,12 +79,20 @@ public class CollectStuff : MonoBehaviour
 
     void Hurt(){
         healthPoints--;
-        hurtSound.Play();
+        if (healthPoints > 0)
+        {
+            hurtSound.Play();
+        }
     }
 
     void Update(){
         if (healthPoints <= 0){
+            dead = true;
             Die();
+        }
+        else
+        {
+            dead = false;
         }
 
         if (coins == 10)
@@ -102,19 +111,20 @@ public class CollectStuff : MonoBehaviour
 
     void Die()
     {
-        Destroy(gameObject);
-        Reload();
+        if (dead)
+        {
+            Vector3 origin = new Vector3(0.0f, 1.0f, 0.0f);
+            gameObject.transform.position = origin;
+            deathSound.Play();
+            deathScreen.gameObject.SetActive(true);
+            dead = false;
+        }
+        
+        healthPoints = 1;
     }
 
     public void ShootAmmo()
     {
         ammo--;
-    }
-
-    public void Reload()
-    {
-        int scene = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(scene, LoadSceneMode.Single);
-        Time.timeScale = 1;
     }
 }

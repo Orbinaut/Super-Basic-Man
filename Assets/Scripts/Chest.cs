@@ -37,7 +37,7 @@ public class Chest : MonoBehaviour
             {
                 message.gameObject.SetActive(true);
                 icon.gameObject.SetActive(true);
-                collectScript.weaponLevel++;
+                collectScript.weaponLevel = keyNumber;
                 keyIcon.gameObject.SetActive(false);
                 Instantiate(openChest, gameObject.transform.position, gameObject.transform.rotation);
                 Destroy(gameObject);
