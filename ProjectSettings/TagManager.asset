@@ -19,6 +19,7 @@ TagManager:
   - Quit
   - Credits
   - RetroLook
+  - Floor
   layers:
   - Default
   - TransparentFX

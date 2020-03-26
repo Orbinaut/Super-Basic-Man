@@ -10,11 +10,19 @@ public class Door : MonoBehaviour
 
     public Animator myAnimator;
 
-    public AudioSource openingSound;
-
     public bool open = false;
 
+    [FMODUnity.EventRef]
+    public string openingSoundEvent;
+
     private bool soundplayed = false;
+
+    private FMOD.Studio.EventInstance openingSound;
+
+    private void Start()
+    {
+        openingSound = FMODUnity.RuntimeManager.CreateInstance(openingSoundEvent);
+    }
 
     void Update()
     {
@@ -30,7 +38,7 @@ public class Door : MonoBehaviour
         myAnimator.SetBool("isOpen", true);
         if (!soundplayed)
         {
-            openingSound.Play();
+            openingSound.start();
             soundplayed = true;
         }
     }

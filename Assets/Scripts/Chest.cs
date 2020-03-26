@@ -4,20 +4,35 @@ using UnityEngine;
 
 public class Chest : MonoBehaviour
 {
+    #region Variables
+
     public GameObject message;
     public GameObject icon;
     public GameObject keyMessage;
     public GameObject keyIcon;
     public GameObject openChest;
 
-    public AudioSource keyNeeded;
-
     public int keyNumber;
+
+    [FMODUnity.EventRef]
+    public string keyNeededEvent;
+
+    [FMODUnity.EventRef]
+    public string achievementSoundEvent;
 
     private CollectStuff collectScript;
 
+    private FMOD.Studio.EventInstance keyNeeded;
+
+    private FMOD.Studio.EventInstance achievementSound;
+
+    #endregion
+
     void Start()
     {
+        keyNeeded = FMODUnity.RuntimeManager.CreateInstance(keyNeededEvent);
+        achievementSound = FMODUnity.RuntimeManager.CreateInstance(achievementSoundEvent);
+
         GameObject player = GameObject.FindWithTag("Player");
         if (player != null)
         {
@@ -41,11 +56,12 @@ public class Chest : MonoBehaviour
                 keyIcon.gameObject.SetActive(false);
                 Instantiate(openChest, gameObject.transform.position, gameObject.transform.rotation);
                 Destroy(gameObject);
+                achievementSound.start();
             }
             else
             {
                 keyMessage.gameObject.SetActive(true);
-                keyNeeded.Play();
+                keyNeeded.start();
             }
         }
     }

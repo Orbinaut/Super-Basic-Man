@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class CollectStuff : MonoBehaviour
 {
-    public AudioSource ammoSound;
-    public AudioSource coinSound;
-    public AudioSource keySound;
-    public AudioSource hurtSound;
-    public AudioSource deathSound;
+    #region Variables
+
     public int healthPoints = 1;
     public int maxHealth = 3;
     public int coins = 0;
@@ -26,13 +23,42 @@ public class CollectStuff : MonoBehaviour
 
     public bool dead = false;
 
-    void Start(){
+    [FMODUnity.EventRef]
+    public string ammoSoundEvent;
+
+    [FMODUnity.EventRef]
+    public string coinSoundEvent;
+
+    [FMODUnity.EventRef]
+    public string hurtSoundEvent;
+
+    [FMODUnity.EventRef]
+    public string keySoundEvent;
+
+    [FMODUnity.EventRef]
+    public string deathSoundEvent;
+
+    private FMOD.Studio.EventInstance ammoSound;
+    private FMOD.Studio.EventInstance coinSound;
+    private FMOD.Studio.EventInstance hurtSound;
+    private FMOD.Studio.EventInstance keySound;
+    private FMOD.Studio.EventInstance deathSound;
+
+    #endregion
+
+    void Start()
+    {
+        ammoSound = FMODUnity.RuntimeManager.CreateInstance(ammoSoundEvent);
+        coinSound = FMODUnity.RuntimeManager.CreateInstance(coinSoundEvent);
+        hurtSound = FMODUnity.RuntimeManager.CreateInstance(hurtSoundEvent);
+        keySound = FMODUnity.RuntimeManager.CreateInstance(keySoundEvent);
+        deathSound = FMODUnity.RuntimeManager.CreateInstance(deathSoundEvent);
     }
 
     void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.CompareTag("Battery")){
             Destroy(other.gameObject);
-            ammoSound.Play();
+            ammoSound.start();
             if (healthPoints < maxHealth)
             {
                 healthPoints++;
@@ -42,14 +68,14 @@ public class CollectStuff : MonoBehaviour
         else if (other.gameObject.CompareTag("Coin"))
         {
             Destroy(other.gameObject);
-            coinSound.Play();
+            coinSound.start();
             coins++;
         }
 
         else if (other.gameObject.CompareTag("1UP"))
         {
             Destroy(other.gameObject);
-            ammoSound.Play();
+            ammoSound.start();
             maxHealth++;
             healthPoints = maxHealth;
         }
@@ -59,7 +85,7 @@ public class CollectStuff : MonoBehaviour
             if (ammo < maxAmmo)
             {
                 Destroy(other.gameObject);
-                ammoSound.Play();
+                ammoSound.start();
                 ammo += Random.Range(5,25);
             }
         }
@@ -68,7 +94,7 @@ public class CollectStuff : MonoBehaviour
         {
             Destroy(other.gameObject);
             keyIcon.gameObject.SetActive(true);
-            keySound.Play();
+            keySound.start();
         }
 
         else if (other.gameObject.CompareTag("Enemy"))
@@ -81,7 +107,7 @@ public class CollectStuff : MonoBehaviour
         healthPoints--;
         if (healthPoints > 0)
         {
-            hurtSound.Play();
+            hurtSound.start();
         }
     }
 
@@ -115,7 +141,7 @@ public class CollectStuff : MonoBehaviour
         {
             Vector3 origin = new Vector3(0.0f, 1.0f, 0.0f);
             gameObject.transform.position = origin;
-            deathSound.Play();
+            deathSound.start();
             deathScreen.gameObject.SetActive(true);
             dead = false;
         }

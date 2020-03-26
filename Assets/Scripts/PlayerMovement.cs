@@ -4,15 +4,31 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    #region Variables
+
     public CharacterController2D controller;
     public Animator animator;
-    public AudioSource jumpSound;
-    public AudioSource landSound;
-
     public float runSpeed = 40f;
+
+    [FMODUnity.EventRef]
+    public string landSoundEvent;
+
+    [FMODUnity.EventRef]
+    public string jumpSoundEvent;
 
     float horizontalMove = 0f;
     bool jump = false;
+
+    private FMOD.Studio.EventInstance jumpSound;
+    private FMOD.Studio.EventInstance landSound;
+
+    #endregion
+
+    void Start()
+    {
+        landSound = FMODUnity.RuntimeManager.CreateInstance(landSoundEvent);
+        jumpSound = FMODUnity.RuntimeManager.CreateInstance(jumpSoundEvent);
+    }
 
     void Update()
     {
@@ -22,14 +38,17 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump")){
             jump = true;
-            jumpSound.Play();
             animator.SetBool("IsJumping", true);
+            if (controller.m_Grounded)
+            {
+                jumpSound.start();
+            }
         }
     }
 
     public void OnLanding(){
         animator.SetBool("IsJumping", false);
-        landSound.Play();
+        landSound.start();
     }
 
     void FixedUpdate(){

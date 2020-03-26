@@ -4,20 +4,32 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    #region Variables
+
     public Transform firePoint;
     public GameObject bullet;
     public GameObject arrow;
     public GameObject bouncer;
-    public AudioSource shotSound;
-    public AudioSource arrowSound;
 
-    public float shootingInaccuracy = 5.0f;
+    [FMODUnity.EventRef]
+    public string arrowSoundEvent;
+
+    [FMODUnity.EventRef]
+    public string shotSoundEvent;
 
     private CollectStuff collectScript;
     private CharacterController2D controllerScript;
 
+    private FMOD.Studio.EventInstance arrowSound;
+    private FMOD.Studio.EventInstance shotSound;
+
+    #endregion
+
     void Start()
     {
+        arrowSound = FMODUnity.RuntimeManager.CreateInstance(arrowSoundEvent);
+        shotSound = FMODUnity.RuntimeManager.CreateInstance(shotSoundEvent);
+
         GameObject player = GameObject.FindWithTag("Player");
         if (player != null)
         {
@@ -52,23 +64,22 @@ public class Weapon : MonoBehaviour
     }
 
     void Shoot(){
-        //Instantiate(bullet, firePoint.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(-shootingInaccuracy, shootingInaccuracy)));
         Instantiate(bullet, firePoint.position, firePoint.rotation);
-        shotSound.Play();
+        shotSound.start();
         collectScript.ShootAmmo();
     }
 
     void Arrow()
     {
         Instantiate(arrow, firePoint.position, firePoint.rotation);
-        arrowSound.Play();
+        arrowSound.start();
         collectScript.ShootAmmo();
     }
 
     void Bouncer()
     {
         Instantiate(bouncer, firePoint.position, firePoint.rotation);
-        shotSound.Play();
+        shotSound.start();
         collectScript.ShootAmmo();
     }
 }
