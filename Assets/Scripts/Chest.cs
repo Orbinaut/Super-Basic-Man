@@ -11,6 +11,7 @@ public class Chest : MonoBehaviour
     public GameObject keyMessage;
     public GameObject keyIcon;
     public GameObject openChest;
+    public GameObject gun;
 
     public int keyNumber;
 
@@ -57,6 +58,10 @@ public class Chest : MonoBehaviour
                 Instantiate(openChest, gameObject.transform.position, gameObject.transform.rotation);
                 Destroy(gameObject);
                 achievementSound.start();
+                if (keyNumber == 1)
+                {
+                    gun.gameObject.SetActive(true);
+                }
             }
             else
             {

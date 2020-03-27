@@ -57,10 +57,10 @@ public class CollectStuff : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.CompareTag("Battery")){
-            Destroy(other.gameObject);
-            ammoSound.start();
             if (healthPoints < maxHealth)
             {
+                Destroy(other.gameObject);
+                ammoSound.start();
                 healthPoints++;
             }
         }
@@ -132,7 +132,7 @@ public class CollectStuff : MonoBehaviour
             tenCoins = 0;
         }
 
-        healthPointSlots[maxHealth-4].gameObject.SetActive(true);
+        healthPointSlots[maxHealth - 1].gameObject.SetActive(true);
     }
 
     void Die()

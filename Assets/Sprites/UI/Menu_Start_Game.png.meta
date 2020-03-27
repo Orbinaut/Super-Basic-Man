@@ -8,6 +8,18 @@ TextureImporter:
   - first:
       213: -5248264241693413744
     second: Menu_Start_Game_1
+  - first:
+      213: 8602859157125510860
+    second: Menu_Start_Game_0
+  - first:
+      213: 3335425465210997530
+    second: Menu_Start_Game_1
+  - first:
+      213: 7644357786182057357
+    second: Menu_Start_Game_2
+  - first:
+      213: -5873487951535939236
+    second: Menu_Start_Game_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -38,7 +50,7 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
+    aniso: 1
     mipBias: -100
     wrapU: 1
     wrapV: 1
@@ -106,8 +118,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dd7b52975e547470800000000000000
-      internalID: 8391435735908711888
+      spriteID: cc6be21d2de736770800000000000000
+      internalID: 8602859157125510860
       vertices: []
       indices: 
       edges: []
@@ -127,8 +139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09eaa7a8a7b6a27b0800000000000000
-      internalID: -5248264241693413744
+      spriteID: a1b81bce9cfc94e20800000000000000
+      internalID: 3335425465210997530
       vertices: []
       indices: 
       edges: []

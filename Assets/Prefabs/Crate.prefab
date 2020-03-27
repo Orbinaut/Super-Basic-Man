@@ -147,4 +147,5 @@ MonoBehaviour:
   - {fileID: 6453301174112151916, guid: 0f9fc649d943b405aa1aac5f9a86bbac, type: 3}
   - {fileID: 819782663826092501, guid: 59e4862cdcdea4f199329fe2ea4a1e7f, type: 3}
   - {fileID: 1911277947194426647, guid: abfe1fffd42cb40f7accde94ab288dfc, type: 3}
-  healthPoints: 1
+  maxHealth: 0
+  minHealth: 0

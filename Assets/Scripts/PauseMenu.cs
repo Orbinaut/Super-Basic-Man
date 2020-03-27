@@ -10,15 +10,14 @@ public class PauseMenu : MonoBehaviour
 
   public GameObject pauseMenuUI;
 
-  public AudioMixer audioMixer;
-
     void Update()
     {
         if (Input.GetButtonDown("Pause")){
             if (gameIsPaused){
                 Resume();
             }
-            else{
+            else
+            {
                 Pause();
             }
         }
@@ -29,7 +28,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         gameIsPaused = false;
         Cursor.visible = false;
-        audioMixer.SetFloat("volume", 0f);
     }
 
     void Pause(){
@@ -37,7 +35,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         gameIsPaused = true;
         Cursor.visible = true;
-        audioMixer.SetFloat("volume", -12f);
     }
 
     public void LoadMenu(){

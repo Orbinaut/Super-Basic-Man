@@ -9,27 +9,10 @@ public class MenuElement : MonoBehaviour
 
     public Sprite[] sprites;
 
-    public GameObject credits;
-
-    public bool retro = false;
-
     private void Start()
     {
         Cursor.visible = true;
-    }
-
-    void Update()
-    {
-        if (retro)
-        {
-            rend.sprite = sprites[2];
-            credits.gameObject.SetActive(true);
-        }
-        if (!retro)
-        {
-            rend.sprite = sprites[0];
-            credits.gameObject.SetActive(false);
-        }
+        rend.sprite = sprites[1];
     }
 
     private void OnMouseOver()
@@ -52,15 +35,6 @@ public class MenuElement : MonoBehaviour
         {
             Application.Quit();
             Debug.Log("Spiel beendet.");
-        }
-        if (gameObject.CompareTag("Credits"))
-        {
-            credits.gameObject.SetActive(true);
-        }
-
-        if (gameObject.CompareTag("RetroLook"))
-        {
-            retro = !retro;
         }
     }
 }
