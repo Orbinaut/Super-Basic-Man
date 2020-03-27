@@ -6,7 +6,7 @@ public class Message : MonoBehaviour
 {
     void Update()
     {
-        if (Input.anyKey)
+        if (Input.GetButtonDown("Arrow") || Input.GetButtonDown("Bouncer") || Input.GetButtonDown("Jump") || Input.GetButtonDown("Shoot"))
         {
             gameObject.SetActive(false);
         }
