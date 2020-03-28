@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{E5DEE435-5DFD-4154-5BC5-4F089A46A3C7}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Ambience.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Chest.cs">
     <Files>
       <File FileName="Assets/Scripts/MenuController.cs" Line="43" Column="7" />
-      <File FileName="Assets/Scripts/CollectStuff.cs" />
-      <File FileName="Assets/Scripts/Weapon.cs" />
+      <File FileName="Assets/Scripts/CollectStuff.cs" Line="51" Column="77" />
+      <File FileName="Assets/Scripts/Weapon.cs" Line="23" Column="5" />
       <File FileName="Assets/Scripts/PlayerMovement.cs" />
       <File FileName="Assets/Scripts/CharacterController2D.cs" />
       <File FileName="Assets/Scripts/Bullet.cs" />
@@ -11,18 +11,19 @@
       <File FileName="Assets/Scripts/Patrol.cs" />
       <File FileName="Assets/Scripts/EnemyBullet.cs" />
       <File FileName="Assets/Scripts/Shootable.cs" />
-      <File FileName="Assets/Scripts/Canon.cs" />
+      <File FileName="Assets/Scripts/Canon.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Parenting.cs" />
-      <File FileName="Assets/Scripts/Chest.cs" />
-      <File FileName="Assets/Scripts/Message.cs" />
+      <File FileName="Assets/Scripts/Chest.cs" Line="26" Column="49" />
+      <File FileName="Assets/Scripts/Message.cs" Line="32" Column="2" />
       <File FileName="Assets/Scripts/CoinTen.cs" />
       <File FileName="Assets/Scripts/Invulnerable.cs" />
-      <File FileName="Assets/Scripts/Skull.cs" />
+      <File FileName="Assets/Scripts/Skull.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Door.cs" />
       <File FileName="Assets/Scripts/SpriteChange.cs" />
-      <File FileName="Assets/Scripts/MenuElement.cs" />
+      <File FileName="Assets/Scripts/MenuElement.cs" Line="10" Column="29" />
       <File FileName="Assets/Scripts/ChangeColor.cs" />
-      <File FileName="Assets/Scripts/Ambience.cs" Line="42" Column="2" />
+      <File FileName="Assets/Scripts/Ambience.cs" Line="10" Column="4" />
+      <File FileName="Assets/Scripts/RetroLook.cs" Line="50" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -30,7 +31,7 @@
           <Node name="Super Basic Shit" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Ambience.cs" selected="True" />
+                <Node name="Chest.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -40,7 +41,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="757d7a60-4a7d-4ef8-b3f8-c0a823590276" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7fe36281-532e-4a19-8f3d-e70d4c2a2fdc" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

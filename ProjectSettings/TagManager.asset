@@ -20,6 +20,7 @@ TagManager:
   - Credits
   - RetroLook
   - Floor
+  - Tutorial
   layers:
   - Default
   - TransparentFX

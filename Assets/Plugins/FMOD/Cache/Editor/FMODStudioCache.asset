@@ -1,5 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9122579345392766238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Enemy_Robot/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-9058269205114807066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,7 +108,7 @@ MonoBehaviour:
   lastModified: 637209553360000000
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-8593128034313595716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,7 +124,7 @@ MonoBehaviour:
   Path: event:/Atmos/Night
   guid: 8be64c625a4a0143a0824dfd4634fd05
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -465,15 +482,67 @@ MonoBehaviour:
   Path: event:/Atmos/Lava
   guid: 08fecec5ac2f4348a34997399462d4e2
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -6621484594421923062}
+  - {fileID: 612239748614706839}
   MinDistance: 1
   MaxDistance: 20
   Length: 3572
+--- !u!114 &-7065550670042789747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Enemy_Square1/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-7033096434560306814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Waterfall/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-6870708995079110108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD Session/4 Week Game_SD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637210107400000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-6840260906792049059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,7 +558,7 @@ MonoBehaviour:
   Path: event:/Weapon/Shot
   guid: 10ff315d05948d4da9b0396f11fcbee8
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -583,7 +652,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-6598487293292377255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,12 +702,12 @@ MonoBehaviour:
   Path: event:/Player/Land
   guid: b0ed5b06e3c0374e861e922eb758d11b
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -2994727124488387715}
+  - {fileID: 4053661170058888861}
   MinDistance: 0
   MaxDistance: 0
   Length: 875
@@ -745,7 +814,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-6337377041961373791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -868,6 +937,40 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-6099715257136049562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Enemy_Square2/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-6096171990601643826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Waterfall/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-6087824868200097005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -919,7 +1022,7 @@ MonoBehaviour:
   Path: event:/Enemies/Skull
   guid: 811170f2412c6f449bb311778fa38c86
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -942,7 +1045,7 @@ MonoBehaviour:
   Path: event:/Player/Jump
   guid: 498c31746cf49844b12e7b961d3bd1b9
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1136,7 +1239,7 @@ MonoBehaviour:
   Path: event:/Door Opens
   guid: c836a3a5706e7f409cfe9607efd66f3c
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1176,11 +1279,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMOD Session/4 Week Game_SD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637209553360000000
+  lastModified: 637210116120000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1948
+    Value: 1986
   Exists: 1
 --- !u!114 &-5122949041784764249
 MonoBehaviour:
@@ -1211,6 +1314,23 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Enemy_Square2/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-4980565963528870819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lava/Distance
   m_EditorClassIdentifier: 
   Name: Distance
   Min: 0
@@ -1374,6 +1494,41 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-4565584339438009649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD Session/4 Week Game_SD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637210116120000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-4564681638277479206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Enemy_Square1/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-4483819933687303082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1404,6 +1559,23 @@ MonoBehaviour:
   m_Name: parameter:/Land/TestParameter
   m_EditorClassIdentifier: 
   Name: TestParameter
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-4471799175224014730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Enemy_Square2/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
   Min: 0
   Max: 1
   Default: 0
@@ -1588,6 +1760,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-3522412365429870726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Land/TestParameter
+  m_EditorClassIdentifier: 
+  Name: TestParameter
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-3491689518639521635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1603,7 +1792,7 @@ MonoBehaviour:
   Path: event:/Crates
   guid: 06b5060cce8d8c45a7a004fef7edc6a0
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1611,6 +1800,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 445
+--- !u!114 &-3438439262058802766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lava/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-3374461995379928539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1736,7 +1942,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-2662514058288996548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1752,7 +1958,7 @@ MonoBehaviour:
   Path: event:/Items/Coin
   guid: 01253bce6fc81c42aa8a0b2a04413c1b
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1972,6 +2178,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-1855159741286401408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Waterfall/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-1820219087998448074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2025,7 +2248,7 @@ MonoBehaviour:
   Path: event:/Atmos/Day
   guid: f47cb542ff9aa44cb2f6007a9de3312b
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2048,12 +2271,12 @@ MonoBehaviour:
   Path: event:/Enemies/Enemy_Square2
   guid: ba6127af10d23c4b91c9eec88b813b27
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -48198787077542830}
+  - {fileID: 8258423282169203484}
   MinDistance: 1
   MaxDistance: 20
   Length: 1415
@@ -2074,7 +2297,7 @@ MonoBehaviour:
   lastModified: 637209553360000000
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-1631383851126957944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2144,6 +2367,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-1493905950874904772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Enemy_Robot/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-1478592960030065611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2301,6 +2541,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-590226439312593648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Enemy_Square2/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-495291498859207793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2401,7 +2658,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemy Destroy
   guid: 7ca0449401f58049ab3a8881174ba0b4
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2443,7 +2700,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2458,8 +2715,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -5172204189649916860}
-  - {fileID: -1679001541528108516}
-  - {fileID: -8700752689797578264}
+  - {fileID: 3907868407223895865}
+  - {fileID: -4565584339438009649}
   EditorEvents:
   - {fileID: 861239903616562925}
   - {fileID: 1148362795968558928}
@@ -2486,12 +2743,13 @@ MonoBehaviour:
   - {fileID: 2420765563819297745}
   - {fileID: -1714409814097991059}
   - {fileID: -1776179880102254798}
+  - {fileID: 567561012218861608}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -8700752689797578264}
+  - {fileID: -4565584339438009649}
   StringsBanks:
   - {fileID: -5172204189649916860}
-  stringsBankWriteTime: 637209553360000000
+  stringsBankWriteTime: 637210116120000000
   cacheVersion: 3
 --- !u!114 &28922291670869778
 MonoBehaviour:
@@ -2671,6 +2929,46 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2620
+--- !u!114 &567561012218861608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Message
+  m_EditorClassIdentifier: 
+  Path: event:/Message
+  guid: 5805e20af5cae940a4223ac266057abd
+  Banks:
+  - {fileID: 3907868407223895865}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 620
+--- !u!114 &612239748614706839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lava/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &655194585580931072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2789,7 +3087,7 @@ MonoBehaviour:
   Path: event:/Achievement
   guid: 2a52678d44e81a4e8e8f6863fb32df9e
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2881,7 +3179,7 @@ MonoBehaviour:
   Path: event:/Key Needed
   guid: 60e6938ba78fc849a026266bd5a35dda
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2939,6 +3237,24 @@ MonoBehaviour:
   Path: ../FMOD Session/4 Week Game/Build/Desktop/Music.bank
   SubDir: 
   lastModified: 637205961000000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &1324397686734601430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/4 Week Game.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD Session/4 Week Game_SD/Build/Desktop/4 Week Game.bank
+  SubDir: 
+  lastModified: 637210107400000000
   LoadResult: 0
   FileSizes: []
   Exists: 0
@@ -3012,6 +3328,24 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &1570615985584445908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/4 Week Game.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD Session/4 Week Game_SD/Build/Desktop/4 Week Game.bank
+  SubDir: 
+  lastModified: 637210107220000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &1668746973932967248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3063,7 +3397,7 @@ MonoBehaviour:
   Path: event:/Items/Collect
   guid: 378c0b522dd54e4fb72b3a5d717cead5
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3122,6 +3456,23 @@ MonoBehaviour:
   lastModified: 637208360810000000
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &2135132666302744983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Enemy_Robot/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 0
 --- !u!114 &2240509988553269288
 MonoBehaviour:
@@ -3248,12 +3599,12 @@ MonoBehaviour:
   Path: event:/Atmos/Waterfall
   guid: aede0c2607ddf2448294cc1d4fa3e611
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 9158756004422175269}
+  - {fileID: -7033096434560306814}
   MinDistance: 1
   MaxDistance: 20
   Length: 6614
@@ -3306,7 +3657,7 @@ MonoBehaviour:
   Path: event:/Weapon/Ricochet
   guid: 4233bc580487b74ba3bf665e65cdd023
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -3382,7 +3733,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &3039489491634548979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3530,7 +3881,7 @@ MonoBehaviour:
   Path: event:/Weapon/Arrow
   guid: 6e4abc520489bf41b915fef58a01edfb
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3764,6 +4115,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &3907868407223895865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/4 Week Game.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD Session/4 Week Game_SD/Build/Desktop/4 Week Game.bank
+  SubDir: 
+  lastModified: 637210116120000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &3969409874152533902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3781,6 +4150,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &4053661170058888861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Land/TestParameter
+  m_EditorClassIdentifier: 
+  Name: TestParameter
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &4078140176213017108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3943,6 +4329,24 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+  Exists: 0
+--- !u!114 &4387736774970297951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD Session/4 Week Game_SD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637210099100000000
+  LoadResult: 0
+  FileSizes: []
   Exists: 0
 --- !u!114 &4419430334732185627
 MonoBehaviour:
@@ -4149,7 +4553,7 @@ MonoBehaviour:
   Path: event:/Items/Key
   guid: b6ae19cbbbbac14b807244ac9cd6ba3a
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4189,7 +4593,7 @@ MonoBehaviour:
   Path: event:/Player/Dead
   guid: 0fac9b753910d145bdb228d61a0de9e7
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4468,7 +4872,7 @@ MonoBehaviour:
   Path: event:/Player/Hurt
   guid: ba707861cccb6144905572ea89e56c2b
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4511,6 +4915,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &5883389075578921367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Land/TestParameter
+  m_EditorClassIdentifier: 
+  Name: TestParameter
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &5933798365832830356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4544,7 +4965,7 @@ MonoBehaviour:
   Path: event:/Player/Run
   guid: 355fe85356557146b2d22699ed671726
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -4604,6 +5025,23 @@ MonoBehaviour:
   lastModified: 637209453090000000
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &6106264129537304564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Enemy_Square1/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 0
 --- !u!114 &6142198684471497785
 MonoBehaviour:
@@ -4724,7 +5162,7 @@ MonoBehaviour:
   Path: event:/Canon
   guid: 818204a6e05c6a48b8dd2cea67c0339d
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -4841,6 +5279,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3000
+--- !u!114 &6774980586830811267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Waterfall/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &6799922557678435704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4889,6 +5344,23 @@ MonoBehaviour:
   m_Name: parameter:/Enemy_Square2/Distance
   m_EditorClassIdentifier: 
   Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &7179511545247966434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Land/TestParameter
+  m_EditorClassIdentifier: 
+  Name: TestParameter
   Min: 0
   Max: 1
   Default: 0
@@ -5007,6 +5479,23 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Enemy_Robot/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &7410527056519384877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Enemy_Square1/Distance
   m_EditorClassIdentifier: 
   Name: Distance
   Min: 0
@@ -5137,12 +5626,12 @@ MonoBehaviour:
   Path: event:/Enemies/Enemy_Square1
   guid: 5ef56a1c6ef2c54297b39ebfd6323a33
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 3036804585571672318}
+  - {fileID: -4564681638277479206}
   MinDistance: 1
   MaxDistance: 20
   Length: 1187
@@ -5220,6 +5709,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 412
+--- !u!114 &7890535414048116154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD Session/4 Week Game_SD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637210107220000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &7933061420747469209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5288,12 +5795,12 @@ MonoBehaviour:
   Path: event:/Enemies/Enemy_Robot
   guid: 000124dc5b88414e955cf97f980df115
   Banks:
-  - {fileID: -1679001541528108516}
+  - {fileID: 3907868407223895865}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -6367471486233361557}
+  - {fileID: -1493905950874904772}
   MinDistance: 1
   MaxDistance: 20
   Length: 1625
@@ -5315,6 +5822,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &8258423282169203484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Enemy_Square2/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &8302517290156277753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5360,6 +5884,41 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Enemy_Robot/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &8474903229667687124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/4 Week Game.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD Session/4 Week Game_SD/Build/Desktop/4 Week Game.bank
+  SubDir: 
+  lastModified: 637210099100000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &8482440147385894286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lava/Distance
   m_EditorClassIdentifier: 
   Name: Distance
   Min: 0
@@ -5453,6 +6012,23 @@ MonoBehaviour:
   lastModified: 637209437170000000
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &8715778159267054605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Enemy_Robot/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 0
 --- !u!114 &8744451430393425625
 MonoBehaviour:
@@ -5597,4 +6173,4 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0

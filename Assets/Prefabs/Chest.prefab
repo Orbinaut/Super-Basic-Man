@@ -101,8 +101,9 @@ MonoBehaviour:
   keyIcon: {fileID: 0}
   openChest: {fileID: 341013093639099299, guid: 136ac8c1ddf5e44bf9054fe06bd00670,
     type: 3}
+  gun: {fileID: 0}
   keyNumber: 0
-  keyNeededEvent: event:/Key Needed
+  keyNeededEvent: event:/Message
   achievementSoundEvent: event:/Achievement
 --- !u!61 &2168971533088501214
 BoxCollider2D:

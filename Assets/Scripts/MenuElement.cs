@@ -31,6 +31,7 @@ public class MenuElement : MonoBehaviour
         {
             SceneManager.LoadScene("Level");
         }
+
         if (gameObject.CompareTag("Quit"))
         {
             Application.Quit();

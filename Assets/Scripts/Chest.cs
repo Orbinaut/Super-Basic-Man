@@ -25,14 +25,11 @@ public class Chest : MonoBehaviour
 
     private FMOD.Studio.EventInstance keyNeeded;
 
-    private FMOD.Studio.EventInstance achievementSound;
-
     #endregion
 
     void Start()
     {
         keyNeeded = FMODUnity.RuntimeManager.CreateInstance(keyNeededEvent);
-        achievementSound = FMODUnity.RuntimeManager.CreateInstance(achievementSoundEvent);
 
         GameObject player = GameObject.FindWithTag("Player");
         if (player != null)
@@ -57,7 +54,6 @@ public class Chest : MonoBehaviour
                 keyIcon.gameObject.SetActive(false);
                 Instantiate(openChest, gameObject.transform.position, gameObject.transform.rotation);
                 Destroy(gameObject);
-                achievementSound.start();
                 if (keyNumber == 1)
                 {
                     gun.gameObject.SetActive(true);
