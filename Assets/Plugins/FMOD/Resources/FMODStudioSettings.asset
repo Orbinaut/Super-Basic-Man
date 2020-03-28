@@ -15,8 +15,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../FMOD Session/4 Week Game/4 Week Game.fspro
-  sourceBankPath: ../FMOD Session/4 Week Game/Build
+  sourceProjectPath: ../FMOD Session/4 Week Game_SD/4 Week Game_SD.fspro
+  sourceBankPath: ../FMOD Session/4 Week Game_SD/Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0

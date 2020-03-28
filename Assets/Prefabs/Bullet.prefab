@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4816572480837982846}
   - component: {fileID: 4816572480837982845}
   - component: {fileID: 9156381439321237913}
+  - component: {fileID: 2919863376700243605}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Bullet
@@ -146,3 +147,26 @@ MonoBehaviour:
   speed: 32
   rb: {fileID: 4816572480837982846}
   impact: {fileID: 5691685120466093509, guid: 23e12b67bba2b48a8b6043a4297ed1fd, type: 3}
+--- !u!114 &2919863376700243605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4816572480837982841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Weapon/Ricochet
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

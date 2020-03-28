@@ -3,12 +3,14 @@ ScriptsOnlyBuild:
     Assembly-CSharp-Editor-firstpass.dll:
     - FMODUnity.EditorBankRef
     - FMODUnity.EditorEventRef
+    - FMODUnity.EditorParamRef
     - FMODUnity.EventCache
     Assembly-CSharp-firstpass.dll:
     - FMODUnity.Settings
     - FMODUnity.StudioEventEmitter
     - FMODUnity.StudioListener
     Assembly-CSharp.dll:
+    - Ambience
     - Bullet
     - Canon
     - ChangeColor
@@ -117,8 +119,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -264,6 +268,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 15386}
     - Class: 114
       Script: {instanceID: 15392}
+    - Class: 114
+      Script: {instanceID: 147908}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1712,6 +1718,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: a6b2fe6bac0ad3455d4a39bc2a9ea96c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Ambience
   platform: 2
   scenePathNames:
   - Assets/Scenes/Start.unity
