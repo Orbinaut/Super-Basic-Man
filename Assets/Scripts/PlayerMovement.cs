@@ -16,11 +16,19 @@ public class PlayerMovement : MonoBehaviour
     [FMODUnity.EventRef]
     public string jumpSoundEvent;
 
+    [FMODUnity.EventRef]
+    public string bounceSoundEvent;
+
+    [FMODUnity.EventRef]
+    public string stepSoundEvent;
+
     float horizontalMove = 0f;
     bool jump = false;
 
     private FMOD.Studio.EventInstance jumpSound;
     private FMOD.Studio.EventInstance landSound;
+    private FMOD.Studio.EventInstance bounceSound;
+    private FMOD.Studio.EventInstance stepSound;
 
     #endregion
 
@@ -28,6 +36,8 @@ public class PlayerMovement : MonoBehaviour
     {
         landSound = FMODUnity.RuntimeManager.CreateInstance(landSoundEvent);
         jumpSound = FMODUnity.RuntimeManager.CreateInstance(jumpSoundEvent);
+        bounceSound = FMODUnity.RuntimeManager.CreateInstance(bounceSoundEvent);
+        stepSound = FMODUnity.RuntimeManager.CreateInstance(stepSoundEvent);
     }
 
     void Update()
@@ -54,5 +64,18 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate(){
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Bouncer"))
+        {
+            bounceSound.start();
+        }
+    }
+
+    public void Footstep()
+    {
+        stepSound.start();
     }
 }

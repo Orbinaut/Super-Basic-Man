@@ -21,6 +21,10 @@ TagManager:
   - RetroLook
   - Floor
   - Tutorial
+  - Bouncer
+  - Music
+  - Ammo Counter
+  - Coin Counter
   layers:
   - Default
   - TransparentFX

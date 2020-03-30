@@ -25,6 +25,13 @@ public class SpriteChange : MonoBehaviour
 
     void Update()
     {
-        rend.sprite = sprites[collectScript.coins];
+        if (gameObject.CompareTag("Ammo Counter"))
+        {
+            rend.sprite = sprites[collectScript.ammo];
+        }
+        else
+        {
+            rend.sprite = sprites[collectScript.coins];
+        }
     }
 }

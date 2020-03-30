@@ -9,7 +9,6 @@ public class CollectStuff : MonoBehaviour
     public int healthPoints = 1;
     public int maxHealth = 3;
     public int coins = 0;
-    public int tenCoins = 0;
     public int ammo = 20;
     public int maxAmmo = 99;
 
@@ -38,11 +37,15 @@ public class CollectStuff : MonoBehaviour
     [FMODUnity.EventRef]
     public string deathSoundEvent;
 
+    [FMODUnity.EventRef]
+    public string exchangeSoundEvent;
+
     private FMOD.Studio.EventInstance ammoSound;
     private FMOD.Studio.EventInstance coinSound;
     private FMOD.Studio.EventInstance hurtSound;
     private FMOD.Studio.EventInstance keySound;
     private FMOD.Studio.EventInstance deathSound;
+    private FMOD.Studio.EventInstance exchangeSound;
 
     #endregion
 
@@ -53,6 +56,7 @@ public class CollectStuff : MonoBehaviour
         hurtSound = FMODUnity.RuntimeManager.CreateInstance(hurtSoundEvent);
         keySound = FMODUnity.RuntimeManager.CreateInstance(keySoundEvent);
         deathSound = FMODUnity.RuntimeManager.CreateInstance(deathSoundEvent);
+        exchangeSound = FMODUnity.RuntimeManager.CreateInstance(exchangeSoundEvent);
     }
 
     void OnTriggerEnter2D(Collider2D other){
@@ -111,7 +115,8 @@ public class CollectStuff : MonoBehaviour
         }
     }
 
-    void Update(){
+    void Update()
+    {
         if (healthPoints <= 0){
             dead = true;
             Die();
@@ -121,18 +126,26 @@ public class CollectStuff : MonoBehaviour
             dead = false;
         }
 
-        if (coins == 10)
-        {
-            coins = 0;
-            tenCoins++;
-        }
-
-        if (tenCoins == 10)
-        {
-            tenCoins = 0;
-        }
-
         healthPointSlots[maxHealth - 1].gameObject.SetActive(true);
+
+        if (Input.GetButtonDown("Heal") && healthPoints < maxHealth && coins >= 10)
+        {
+            healthPoints++;
+            coins -= 10;
+            exchangeSound.start();
+        }
+
+        if (Input.GetButtonDown("Steal") && ammo < maxAmmo && coins >= 10)
+        {
+            ammo += 25;
+            coins -= 10;
+            exchangeSound.start();
+        }
+
+        if (ammo > maxAmmo)
+        {
+            ammo = maxAmmo;
+        }
     }
 
     void Die()

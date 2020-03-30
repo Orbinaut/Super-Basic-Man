@@ -9,15 +9,34 @@ public class MenuElement : MonoBehaviour
 
     public Sprite[] sprites;
 
+    public Animator transitionLeft;
+    public Animator transitionRight;
+
+    public string level;
+
+    public float transitionTime = 1.0f;
+
+    [FMODUnity.EventRef]
+    public string mouseOverEvent;
+
+    [FMODUnity.EventRef]
+    public string mouseClickEvent;
+
+    private FMOD.Studio.EventInstance mouseOverSound;
+    private FMOD.Studio.EventInstance mouseClickSound;
+
     private void Start()
     {
         Cursor.visible = true;
         rend.sprite = sprites[1];
+        mouseOverSound = FMODUnity.RuntimeManager.CreateInstance(mouseOverEvent);
+        mouseClickSound = FMODUnity.RuntimeManager.CreateInstance(mouseClickEvent);
     }
 
     private void OnMouseOver()
     {
         rend.sprite = sprites[0];
+        //mouseOverSound.start();
     }
 
     private void OnMouseExit()
@@ -29,7 +48,10 @@ public class MenuElement : MonoBehaviour
     {
         if (gameObject.CompareTag("Start"))
         {
-            SceneManager.LoadScene("Level");
+            Time.timeScale = 1f;
+            mouseClickSound.start();
+            Cursor.visible = false;
+            StartCoroutine(LoadLevel());
         }
 
         if (gameObject.CompareTag("Quit"))
@@ -37,5 +59,23 @@ public class MenuElement : MonoBehaviour
             Application.Quit();
             Debug.Log("Spiel beendet.");
         }
+    }
+
+    IEnumerator LoadLevel()
+    {
+        transitionLeft.SetTrigger("Start");
+        transitionRight.SetTrigger("Start");
+
+        yield return new WaitForSeconds(transitionTime);
+
+        SceneManager.LoadScene(level);
+
+        //AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(level);
+
+        //// Wait until the asynchronous scene fully loads
+        //while (!asyncLoad.isDone)
+        //{
+        //    yield return null;
+        //}
     }
 }

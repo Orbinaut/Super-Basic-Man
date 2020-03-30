@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChangeColor : MonoBehaviour
 {
@@ -17,6 +18,6 @@ public class ChangeColor : MonoBehaviour
 
     void Update()
     {
-        spriteRenderer.color = Color.Lerp(A, B, Mathf.PingPong(Time.time * speed, 1.0f));
+        spriteRenderer.color = Color.Lerp(A, B, Mathf.PingPong(Time.timeSinceLevelLoad * speed, 1.0f));
     }
 }

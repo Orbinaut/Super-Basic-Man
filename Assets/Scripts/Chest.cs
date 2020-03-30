@@ -57,6 +57,7 @@ public class Chest : MonoBehaviour
                 if (keyNumber == 1)
                 {
                     gun.gameObject.SetActive(true);
+                    collectScript.ammo = 25;
                 }
             }
             else

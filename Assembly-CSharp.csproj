@@ -64,14 +64,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Ambience.cs" />
+    <Compile Include="Assets\Scripts\Bomb.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\Canon.cs" />
     <Compile Include="Assets\Scripts\ChangeColor.cs" />
     <Compile Include="Assets\Scripts\CharacterController2D.cs" />
     <Compile Include="Assets\Scripts\Chest.cs" />
     <Compile Include="Assets\Scripts\CleanUp.cs" />
-    <Compile Include="Assets\Scripts\CoinTen.cs" />
     <Compile Include="Assets\Scripts\CollectStuff.cs" />
+    <Compile Include="Assets\Scripts\CreateSomething.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\EnemyBullet.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
@@ -81,14 +82,17 @@
     <Compile Include="Assets\Scripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\MenuElement.cs" />
     <Compile Include="Assets\Scripts\Message.cs" />
+    <Compile Include="Assets\Scripts\MusicPlayer.cs" />
     <Compile Include="Assets\Scripts\Parenting.cs" />
     <Compile Include="Assets\Scripts\Patrol.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\RandomSprite.cs" />
     <Compile Include="Assets\Scripts\RetroLook.cs" />
     <Compile Include="Assets\Scripts\Shootable.cs" />
     <Compile Include="Assets\Scripts\Skull.cs" />
     <Compile Include="Assets\Scripts\SpriteChange.cs" />
+    <Compile Include="Assets\Scripts\Vanish.cs" />
     <Compile Include="Assets\Scripts\Weapon.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
