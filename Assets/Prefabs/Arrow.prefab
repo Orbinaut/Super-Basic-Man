@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/ArrowStick
+  Event: event:/Weapon/Arrow Ricochet
   PlayEvent: 9
   StopEvent: 0
   AllowFadeout: 1

@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Crates
+  Event: event:/Items/Crate Explode
   PlayEvent: 2
   StopEvent: 0
   AllowFadeout: 1
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Crate New
+  Event: event:/Items/Crate Move
   PlayEvent: 9
   StopEvent: 0
   AllowFadeout: 1

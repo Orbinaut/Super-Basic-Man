@@ -161,7 +161,7 @@ MonoBehaviour:
   - {fileID: -349639727407516923, guid: c64bf70b6a4d74a3cb7e9e5999d5d2ab, type: 3}
   myAnimator: {fileID: 8888084378803779620}
   open: 0
-  openingSoundEvent: event:/Door Opens
+  openingSoundEvent: event:/UI/Door Opens
 --- !u!95 &8888084378803779620
 Animator:
   serializedVersion: 3

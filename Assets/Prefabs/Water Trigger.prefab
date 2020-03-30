@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: Player
-  Event: event:/Water Splash
+  Event: event:/Atmos/Water Splash
   PlayEvent: 5
   StopEvent: 0
   AllowFadeout: 1

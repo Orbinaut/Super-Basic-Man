@@ -103,8 +103,8 @@ MonoBehaviour:
     type: 3}
   gun: {fileID: 0}
   keyNumber: 0
-  keyNeededEvent: event:/Message
-  achievementSoundEvent: event:/Achievement
+  keyNeededEvent: event:/UI/Message
+  achievementSoundEvent: event:/UI/Achievement
 --- !u!61 &2168971533088501214
 BoxCollider2D:
   m_ObjectHideFlags: 0

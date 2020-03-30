@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class Ambience : MonoBehaviour
 {
+    public float speed = 1.0f;
     public bool day = true;
     public float dayLength = 100.0f;
 
     [FMODUnity.EventRef]
-    public string daySoundEvent;
+    public string daytimeSoundEvent;
 
-    [FMODUnity.EventRef]
-    public string nightSoundEvent;
-
-    private FMOD.Studio.EventInstance daySound;
-    private FMOD.Studio.EventInstance nightSound;
+    private FMOD.Studio.EventInstance daytimeSound;
 
     private MusicPlayer musicScript;
 
@@ -29,34 +26,32 @@ public class Ambience : MonoBehaviour
         {
             Debug.Log("Can't find the 'MusicPlayer' script");
         }
-
-        daySound = FMODUnity.RuntimeManager.CreateInstance(daySoundEvent);
-        nightSound = FMODUnity.RuntimeManager.CreateInstance(nightSoundEvent);
+        daytimeSound = FMODUnity.RuntimeManager.CreateInstance(daytimeSoundEvent);
+        daytimeSound.start();
         Invoke("Nighttime", dayLength);
-        daySound.start();
     }
 
     void Daytime()
     {
         day = true;
-        nightSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        daySound.start();
         musicScript.isNight = 0f;
-        Invoke("Nighttime", (dayLength + dayLength/2));
+        Invoke("Nighttime", (dayLength + dayLength / 2));
     }
 
     void Nighttime()
     {
         day = false;
-        daySound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        nightSound.start();
         musicScript.isNight = 1f;
-        Invoke("Daytime", dayLength/2);
+        Invoke("Daytime", dayLength / 2);
+    }
+
+    void Update()
+    {
+        daytimeSound.setParameterByName("Night", Mathf.Lerp(0, 1, Mathf.PingPong(Time.timeSinceLevelLoad * speed, 1.0f)));
     }
 
     private void OnDestroy()
     {
-        daySound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        nightSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        daytimeSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 }

@@ -15,12 +15,8 @@ public class RetroLook : MonoBehaviour
     private MusicPlayer musicScript;
 
     [FMODUnity.EventRef]
-    public string mouseOverEvent;
-
-    [FMODUnity.EventRef]
     public string mouseClickEvent;
 
-    private FMOD.Studio.EventInstance mouseOverSound;
     private FMOD.Studio.EventInstance mouseClickSound;
 
     private void Start()
@@ -37,7 +33,6 @@ public class RetroLook : MonoBehaviour
 
         Cursor.visible = true;
         rend.sprite = sprites[1];
-        mouseOverSound = FMODUnity.RuntimeManager.CreateInstance(mouseOverEvent);
         mouseClickSound = FMODUnity.RuntimeManager.CreateInstance(mouseClickEvent);
     }
 
@@ -47,20 +42,17 @@ public class RetroLook : MonoBehaviour
         {
             retroLook.gameObject.SetActive(true);
             musicScript.isRetro = 1f;
-            Debug.Log("Retro-Musik an.");
         }
         if (!retro)
         {
             retroLook.gameObject.SetActive(false);
             musicScript.isRetro = 0f;
-            Debug.Log("Retro-Musik aus.");
         }
     }
 
     private void OnMouseOver()
     {
         rend.sprite = sprites[0];
-        //mouseOverSound.start();
     }
 
     private void OnMouseExit()

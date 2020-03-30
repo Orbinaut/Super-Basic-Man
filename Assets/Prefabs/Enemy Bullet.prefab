@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Canon
+  Event: event:/Enemies/Canon
   PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1

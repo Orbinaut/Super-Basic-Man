@@ -6,6 +6,7 @@ public class MusicPlayer : MonoBehaviour
 {
     public float isRetro = 0f;
     public float isNight = 0f;
+    public int inCave = 0;
 
     [FMODUnity.EventRef]
     public string musicEvent;
@@ -22,6 +23,7 @@ public class MusicPlayer : MonoBehaviour
     {
         music.setParameterByName("Retro", isRetro);
         music.setParameterByName("Night", isNight);
+        music.setParameterByName("Cave", inCave);
     }
 
     private void OnDestroy()

@@ -17,26 +17,20 @@ public class MenuElement : MonoBehaviour
     public float transitionTime = 1.0f;
 
     [FMODUnity.EventRef]
-    public string mouseOverEvent;
-
-    [FMODUnity.EventRef]
     public string mouseClickEvent;
 
-    private FMOD.Studio.EventInstance mouseOverSound;
     private FMOD.Studio.EventInstance mouseClickSound;
 
     private void Start()
     {
         Cursor.visible = true;
         rend.sprite = sprites[1];
-        mouseOverSound = FMODUnity.RuntimeManager.CreateInstance(mouseOverEvent);
         mouseClickSound = FMODUnity.RuntimeManager.CreateInstance(mouseClickEvent);
     }
 
     private void OnMouseOver()
     {
         rend.sprite = sprites[0];
-        //mouseOverSound.start();
     }
 
     private void OnMouseExit()
@@ -69,13 +63,5 @@ public class MenuElement : MonoBehaviour
         yield return new WaitForSeconds(transitionTime);
 
         SceneManager.LoadScene(level);
-
-        //AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(level);
-
-        //// Wait until the asynchronous scene fully loads
-        //while (!asyncLoad.isDone)
-        //{
-        //    yield return null;
-        //}
     }
 }

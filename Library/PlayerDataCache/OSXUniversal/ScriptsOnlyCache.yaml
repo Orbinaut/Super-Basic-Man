@@ -122,8 +122,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -1035,7 +1037,7 @@ ScriptsOnlyBuild:
     className: CinemachineTrackedDolly
   - hash:
       serializedVersion: 2
-      Hash: 7776d26fe7ea6011fb8143ae7b3da776
+      Hash: 5e2977095a292f0a2077eb92e045ea20
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MusicPlayer
@@ -1053,7 +1055,7 @@ ScriptsOnlyBuild:
     className: AutoExposure
   - hash:
       serializedVersion: 2
-      Hash: 201d4b314d1c804d7812c9512167a963
+      Hash: 599188c26b806575e4d2cc5f27ef6bee
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -1305,7 +1307,7 @@ ScriptsOnlyBuild:
     className: CinemachineTouchInputMapper
   - hash:
       serializedVersion: 2
-      Hash: 20d373b4e876abdc16ac972051f45f73
+      Hash: 1a11f8566d2f0fdecc9db5d3e49ed08b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MenuElement
@@ -1575,7 +1577,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: a6b2fe6bac0ad3455d4a39bc2a9ea96c
+      Hash: 173e2c41d36a5250629b0056763f9a8e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Ambience
@@ -1725,7 +1727,7 @@ ScriptsOnlyBuild:
     className: PauseMenu
   - hash:
       serializedVersion: 2
-      Hash: 63c5499c1714bf5262a7c273cca22def
+      Hash: eb7d8a602f996dae1bf4df33ab6c3f49
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RetroLook
@@ -1747,8 +1749,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 157c4f465709bcadb7cd10b4b489ef15
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Cave
   platform: 2
   scenePathNames:
   - Assets/Scenes/Start.unity
   - Assets/Scenes/Level.unity
-  playerPath: /Users/henning/Desktop/200330_Demo_v10.app
+  playerPath: /Users/henning/Desktop/200330_Demo_v11.app
