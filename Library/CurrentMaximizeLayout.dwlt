@@ -22,10 +22,10 @@ MonoBehaviour:
     y: 30
     width: 2048
     height: 1057
-  m_MinSize: {x: 708, y: 492}
-  m_MaxSize: {x: 18003, y: 14042}
+  m_MinSize: {x: 709, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 11389
+  controlID: 6614
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,10 +136,10 @@ MonoBehaviour:
     y: 0
     width: 960
     height: 1057
-  m_MinSize: {x: 201, y: 442}
-  m_MaxSize: {x: 4001, y: 8042}
+  m_MinSize: {x: 201, y: 421}
+  m_MaxSize: {x: 4001, y: 8021}
   vertical: 1
-  controlID: 11368
+  controlID: 6615
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -206,9 +206,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 100.0671, y: 40.896175, z: -48.26049}
+    m_Target: {x: -2.3982544, y: -0.7197327, z: -70.44563}
     speed: 2
-    m_Value: {x: 100.0671, y: 40.896175, z: -48.26049}
+    m_Value: {x: -2.3982544, y: -0.7197327, z: -70.44563}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -258,9 +258,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.9048057
+    m_Target: 19.071905
     speed: 2
-    m_Value: 7.9048057
+    m_Value: 19.071905
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1262,7 +1262,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 16840
+  m_LastSelectedObjectID: -86996
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1287,7 +1287,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 11305
+  controlID: 6582
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1346,7 +1346,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 3cfbffff723f000016430000
+      m_ExpandedIDs: 248cffffc0e3ffff3cfbffff1e91000098920000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1467,20 +1467,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Sprites/UI
   m_ViewMode: 1
   m_StartGridSize: 55
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Sprites/UI
   m_LastFoldersGridSize: 55
   m_LastProjectPath: /Users/henning/Videospielfirma/4 Week Game/Super Basic Shit
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ae550000
-    m_LastClickedID: 21934
-    m_ExpandedIDs: 00000000ae4b0000f04d0000f24d000000ca9a3b
+    m_SelectedIDs: ae560000
+    m_LastClickedID: 22190
+    m_ExpandedIDs: 00000000ac4b0000ee4d0000f04d0000a256000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1508,7 +1508,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 877}
     m_SelectedIDs: c8490000
     m_LastClickedID: 18888
-    m_ExpandedIDs: 00000000ae4b0000f04d0000f24d000000ca9a3b
+    m_ExpandedIDs: 00000000ac4b0000ee4d0000f04d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1533,9 +1533,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 68a2faff
-    m_LastClickedInstanceID: -351640
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 2cacfeff
+    m_LastClickedInstanceID: -86996
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 663200007a3f000062480000be4800009a53000062aa000020b200008228faff364a0200e44500008046010048180200ee14010034ec01003676000030760000c41601008c580000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1745,7 +1745,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: -351640
+  m_LastInspectedObjectInstanceID: -86996
   m_LastVerticalScrollValue: 0
 --- !u!114 &21
 MonoBehaviour:

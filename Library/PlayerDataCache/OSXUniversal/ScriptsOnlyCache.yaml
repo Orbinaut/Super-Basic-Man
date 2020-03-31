@@ -122,10 +122,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -260,23 +258,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14602}
     - Class: 114
-      Script: {instanceID: 15034}
-    - Class: 114
       Script: {instanceID: 15036}
     - Class: 114
-      Script: {instanceID: 15062}
+      Script: {instanceID: 15038}
     - Class: 114
-      Script: {instanceID: 15140}
+      Script: {instanceID: 15064}
     - Class: 114
-      Script: {instanceID: 15230}
+      Script: {instanceID: 15142}
     - Class: 114
-      Script: {instanceID: 15280}
+      Script: {instanceID: 15232}
     - Class: 114
-      Script: {instanceID: 15298}
+      Script: {instanceID: 15282}
     - Class: 114
-      Script: {instanceID: 15396}
+      Script: {instanceID: 15300}
     - Class: 114
-      Script: {instanceID: 15402}
+      Script: {instanceID: 15398}
+    - Class: 114
+      Script: {instanceID: 15404}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -375,6 +373,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13258}
     - Class: 114
+      Script: {instanceID: 13304}
+    - Class: 114
       Script: {instanceID: 13530}
     - Class: 114
       Script: {instanceID: 13552}
@@ -405,27 +405,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14574}
     - Class: 114
-      Script: {instanceID: 14826}
+      Script: {instanceID: 14828}
     - Class: 114
-      Script: {instanceID: 14866}
+      Script: {instanceID: 14868}
     - Class: 114
-      Script: {instanceID: 14988}
+      Script: {instanceID: 14990}
     - Class: 114
-      Script: {instanceID: 15038}
-    - Class: 114
-      Script: {instanceID: 15250}
+      Script: {instanceID: 15040}
     - Class: 114
       Script: {instanceID: 15252}
     - Class: 114
-      Script: {instanceID: 15316}
+      Script: {instanceID: 15254}
     - Class: 114
       Script: {instanceID: 15318}
     - Class: 114
-      Script: {instanceID: 15402}
+      Script: {instanceID: 15320}
     - Class: 114
-      Script: {instanceID: 15442}
+      Script: {instanceID: 15404}
     - Class: 114
-      Script: {instanceID: 15448}
+      Script: {instanceID: 15444}
+    - Class: 114
+      Script: {instanceID: 15450}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1493,6 +1493,12 @@ ScriptsOnlyBuild:
     className: TerrainTile
   - hash:
       serializedVersion: 2
+      Hash: 157c4f465709bcadb7cd10b4b489ef15
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Cave
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1749,12 +1755,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 157c4f465709bcadb7cd10b4b489ef15
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Cave
   platform: 2
   scenePathNames:
   - Assets/Scenes/Start.unity
