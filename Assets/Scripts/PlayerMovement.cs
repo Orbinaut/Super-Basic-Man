@@ -63,6 +63,9 @@ public class PlayerMovement : MonoBehaviour
 
     public void Footstep()
     {
-        stepSound.start();
+        if (controller.m_Grounded)
+        {
+            stepSound.start();
+        }
     }
 }

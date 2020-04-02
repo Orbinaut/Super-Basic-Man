@@ -15,6 +15,8 @@ public class Ambience : MonoBehaviour
 
     private MusicPlayer musicScript;
 
+    public GameObject shootingStar;
+
     void Start()
     {
         GameObject music = GameObject.FindWithTag("Music");
@@ -43,6 +45,7 @@ public class Ambience : MonoBehaviour
         day = false;
         musicScript.isNight = 1f;
         Invoke("Daytime", dayLength / 2);
+        shootingStar.gameObject.SetActive(true);
     }
 
     void Update()
