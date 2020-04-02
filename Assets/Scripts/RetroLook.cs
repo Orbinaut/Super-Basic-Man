@@ -41,12 +41,12 @@ public class RetroLook : MonoBehaviour
         if (retro)
         {
             retroLook.gameObject.SetActive(true);
-            musicScript.isRetro = 1f;
+            musicScript.isRetro = 1;
         }
         if (!retro)
         {
             retroLook.gameObject.SetActive(false);
-            musicScript.isRetro = 0f;
+            musicScript.isRetro = 0;
         }
     }
 

@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour
 {
-    public float isRetro = 0f;
+    public int isRetro = 0;
     public float isNight = 0f;
-    public int inCave = 0;
+    public float darkArea = 0f;
 
     [FMODUnity.EventRef]
     public string musicEvent;
@@ -21,9 +21,9 @@ public class MusicPlayer : MonoBehaviour
 
     void Update()
     {
-        music.setParameterByName("Retro", isRetro);
+        music.setParameterByName("Retro New", isRetro);
         music.setParameterByName("Night", isNight);
-        music.setParameterByName("Cave", inCave);
+        music.setParameterByName("Cave", darkArea);
     }
 
     private void OnDestroy()

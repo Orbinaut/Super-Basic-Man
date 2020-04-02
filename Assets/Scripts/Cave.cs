@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Cave : MonoBehaviour
 {
-    public bool playerIsInCave = false;
+    public bool insideDarkArea = false;
 
     private MusicPlayer musicScript;
 
@@ -25,7 +25,7 @@ public class Cave : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            musicScript.inCave = 1;
+            musicScript.darkArea = 1f;
         }
     }
 
@@ -33,7 +33,7 @@ public class Cave : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            musicScript.inCave = 0;
+            musicScript.darkArea = 0f;
         }
     }
 }

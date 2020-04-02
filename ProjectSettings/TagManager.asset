@@ -25,6 +25,7 @@ TagManager:
   - Music
   - Ammo Counter
   - Coin Counter
+  - Dark Area Entry
   layers:
   - Default
   - TransparentFX
