@@ -5,7 +5,6 @@ ScriptsOnlyBuild:
     - FMODUnity.EditorEventRef
     - FMODUnity.EditorParamRef
     - FMODUnity.EventCache
-    - FMODUnity.StudioEventEmitterEditor
     Assembly-CSharp-firstpass.dll:
     - FMODUnity.Settings
     - FMODUnity.StudioEventEmitter
