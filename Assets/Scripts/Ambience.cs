@@ -5,7 +5,6 @@ using UnityEngine;
 public class Ambience : MonoBehaviour
 {
     public float speed = 1.0f;
-    public bool day = true;
     public float dayLength = 100.0f;
 
     [FMODUnity.EventRef]
@@ -30,21 +29,19 @@ public class Ambience : MonoBehaviour
         }
         daytimeSound = FMODUnity.RuntimeManager.CreateInstance(daytimeSoundEvent);
         daytimeSound.start();
-        Invoke("Nighttime", dayLength);
+        Invoke("Nighttime", dayLength - dayLength/5);
     }
 
     void Daytime()
     {
-        day = true;
         musicScript.isNight = 0f;
-        Invoke("Nighttime", (dayLength + dayLength / 2));
+        Invoke("Nighttime", dayLength + dayLength/2);
     }
 
     void Nighttime()
     {
-        day = false;
         musicScript.isNight = 1f;
-        Invoke("Daytime", dayLength / 2);
+        Invoke("Daytime", dayLength/2);
         shootingStar.gameObject.SetActive(true);
     }
 

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3967405520704138718}
   - component: {fileID: 4263761101374143508}
   - component: {fileID: 2092499859741815378}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: Square Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2022329138484597366}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: Ground Detection
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}

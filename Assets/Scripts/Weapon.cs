@@ -11,6 +11,10 @@ public class Weapon : MonoBehaviour
     public GameObject arrow;
     public GameObject bouncer;
 
+    public float distance = 1f;
+    public Transform bouncerCheck;
+    public Transform bouncerSideCheck;
+
     [FMODUnity.EventRef]
     public string arrowSoundEvent;
 
@@ -48,11 +52,19 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
+        RaycastHit2D groundInfo = Physics2D.Raycast(bouncerCheck.position, Vector2.down, distance);
+        RaycastHit2D sideInfo = Physics2D.Raycast(bouncerCheck.position, Vector2.right, distance);
+
+        if (groundInfo.collider == false && sideInfo.collider == false)
+        {
+            Debug.Log("Can't put a bouncer here.");
+        }
+
         if (Input.GetButtonDown("Shoot") && collectScript.ammo > 0 && collectScript.weaponLevel >= 1)
         {
             Shoot();
         }
-        if (Input.GetButtonDown("Bouncer") && collectScript.ammo > 0 && controllerScript.m_Grounded && collectScript.weaponLevel >= 2)
+        if (Input.GetButtonDown("Bouncer") && collectScript.ammo > 0 && controllerScript.m_Grounded && collectScript.weaponLevel >= 2 && groundInfo.collider && !sideInfo.collider)
         {
             Bouncer();
         }

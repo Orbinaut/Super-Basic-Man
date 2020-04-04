@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 525635351292884800}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: Fire Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 4477710598627652964}
   - component: {fileID: 6413507627214948581}
   - component: {fileID: 1932957334826940463}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: Robot Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -296,7 +296,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5255801956232072083}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: Ground Detection
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}

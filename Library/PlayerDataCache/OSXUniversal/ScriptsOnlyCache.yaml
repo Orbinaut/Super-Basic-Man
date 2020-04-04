@@ -50,7 +50,6 @@ ScriptsOnlyBuild:
     - UnityEngine.U2D.PixelPerfectCamera
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -727,7 +726,7 @@ ScriptsOnlyBuild:
     className: AdvancedRuleOverrideTile
   - hash:
       serializedVersion: 2
-      Hash: 3b4ac5e5a83cf94816c4deb7b0c064c7
+      Hash: e6a84762fcbe876522bfc47e788472e5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CollectStuff
@@ -1129,7 +1128,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerEnumField
   - hash:
       serializedVersion: 2
-      Hash: 2035aade42cbad9a1c1644f4178c1823
+      Hash: 6f82b8a7854cd729bd71224b65f85ed7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Weapon
@@ -1585,7 +1584,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: 37dbc5973417bb952618b967f2e11a45
+      Hash: 0332c60b99a0ee8c568f9826060ac046
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Ambience

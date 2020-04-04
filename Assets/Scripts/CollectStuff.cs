@@ -40,12 +40,16 @@ public class CollectStuff : MonoBehaviour
     [FMODUnity.EventRef]
     public string exchangeSoundEvent;
 
+    [FMODUnity.EventRef]
+    public string bounceSoundEvent;
+
     private FMOD.Studio.EventInstance ammoSound;
     private FMOD.Studio.EventInstance coinSound;
     private FMOD.Studio.EventInstance hurtSound;
     private FMOD.Studio.EventInstance keySound;
     private FMOD.Studio.EventInstance deathSound;
     private FMOD.Studio.EventInstance exchangeSound;
+    private FMOD.Studio.EventInstance bounceSound;
 
     #endregion
 
@@ -57,6 +61,7 @@ public class CollectStuff : MonoBehaviour
         keySound = FMODUnity.RuntimeManager.CreateInstance(keySoundEvent);
         deathSound = FMODUnity.RuntimeManager.CreateInstance(deathSoundEvent);
         exchangeSound = FMODUnity.RuntimeManager.CreateInstance(exchangeSoundEvent);
+        bounceSound = FMODUnity.RuntimeManager.CreateInstance(bounceSoundEvent);
     }
 
     void OnTriggerEnter2D(Collider2D other){
@@ -104,6 +109,13 @@ public class CollectStuff : MonoBehaviour
         else if (other.gameObject.CompareTag("Enemy"))
         {
             Hurt();
+        }
+
+        else if (other.gameObject.CompareTag("Bouncer"))
+        {
+            //Destroy(other.gameObject);
+            //keyIcon.gameObject.SetActive(true);
+            bounceSound.start();
         }
     }
 

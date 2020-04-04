@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8918142452378975118}
   - component: {fileID: 8918142452378975119}
   - component: {fileID: 1684105705090695254}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Water Trigger
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}

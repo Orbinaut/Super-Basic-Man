@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3600839638056473095}
   - component: {fileID: 3714383485507908516}
   - component: {fileID: 7742560494088117146}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 6453301174112151919}
   - component: {fileID: 6453301174112151918}
   - component: {fileID: 6453301174112151917}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Ammo
   m_TagString: Ammo
   m_Icon: {fileID: 0}

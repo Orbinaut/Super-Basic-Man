@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4565735631757187113}
   - component: {fileID: 4565735631757187112}
   - component: {fileID: 4565735631757187115}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4565735631891123517}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Fire Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}

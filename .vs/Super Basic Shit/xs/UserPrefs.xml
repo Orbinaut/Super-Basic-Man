@@ -1,17 +1,21 @@
 ﻿<Properties StartupConfiguration="{E5DEE435-5DFD-4154-5BC5-4F089A46A3C7}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Cave.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CollectStuff.cs">
     <Files>
-      <File FileName="Assets/Scripts/CollectStuff.cs" Line="23" Column="30" />
+      <File FileName="Assets/Scripts/CollectStuff.cs" Line="117" Column="50" />
       <File FileName="Assets/Scripts/Message.cs" />
-      <File FileName="Assets/Scripts/Weapon.cs" />
-      <File FileName="Assets/Scripts/MusicPlayer.cs" Line="19" Column="23" />
-      <File FileName="Assets/Scripts/Ambience.cs" Line="60" Column="2" />
-      <File FileName="Assets/Scripts/RetroLook.cs" Line="8" Column="1" />
+      <File FileName="Assets/Scripts/Weapon.cs" Line="28" Column="49" />
+      <File FileName="Assets/Scripts/MusicPlayer.cs" />
+      <File FileName="Assets/Scripts/Ambience.cs" />
+      <File FileName="Assets/Scripts/RetroLook.cs" />
       <File FileName="Assets/Scripts/MenuElement.cs" />
       <File FileName="Assets/Scripts/Door.cs" />
-      <File FileName="Assets/Scripts/PlayerMovement.cs" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/ChangeColor.cs" />
-      <File FileName="Assets/Scripts/Cave.cs" Line="36" Column="39" />
+      <File FileName="Assets/Scripts/Cave.cs" />
+      <File FileName="Assets/Scripts/Vanish.cs" />
+      <File FileName="Assets/Scripts/Bomb.cs" Line="14" Column="2" />
+      <File FileName="Assets/Scripts/Patrol.cs" Line="8" Column="1" />
+      <File FileName="Assets/Scripts/CharacterController2D.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,7 +23,7 @@
           <Node name="Super Basic Shit" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Cave.cs" selected="True" />
+                <Node name="CollectStuff.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -32,7 +36,7 @@
     <String>Assembly-CSharp-firstpass.csproj</String>
   </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="155642d7-5ad4-4982-8468-756a6b4005d4" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4bc939f6-daf9-4bcf-8f7a-62e07ab2b46e" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

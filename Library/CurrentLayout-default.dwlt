@@ -116,7 +116,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 5449
+  controlID: 41310
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,10 +138,10 @@ MonoBehaviour:
     y: 0
     width: 960
     height: 1057
-  m_MinSize: {x: 201, y: 442}
-  m_MaxSize: {x: 4001, y: 8042}
+  m_MinSize: {x: 201, y: 421}
+  m_MaxSize: {x: 4001, y: 8021}
   vertical: 1
-  controlID: 5478
+  controlID: 41268
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -171,7 +171,7 @@ MonoBehaviour:
   - {fileID: 17}
   - {fileID: 18}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 4
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 5450
+  controlID: 41311
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -430,9 +430,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 101.38341, y: -69.928116, z: -29.288502}
+    m_Target: {x: 0.8178837, y: -0.7036928, z: -2.5004065}
     speed: 2
-    m_Value: {x: 101.38341, y: -69.928116, z: -29.288502}
+    m_Value: {x: 5.6190095, y: -5.8798385, z: -5.489051}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -482,9 +482,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.097571
+    m_Target: 1.0163957
     speed: 2
-    m_Value: 9.097571
+    m_Value: 0.82675815
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1473,10 +1473,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: dfa53e3f5bfa4449492bccef51d57d37,
+  m_AnimatorController: {fileID: 9100000, guid: d3ad01b071df1493f90628fd9d9fbfd2,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 5595266470531320229, guid: dfa53e3f5bfa4449492bccef51d57d37,
+  - m_Target: {fileID: -2256020266307188518, guid: d3ad01b071df1493f90628fd9d9fbfd2,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -1544,7 +1544,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 17362
+  m_LastSelectedObjectID: -1439136
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1576,7 +1576,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: aeb7f9ffc2b7f9ff5cb9f9ff86b9f9ff3cfbffff
+      m_ExpandedIDs: 3ee6e8ff92e6e8ff2ce8e8ff56e8e8ff3cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1629,7 +1629,7 @@ MonoBehaviour:
     m_CachedPref: 73
     m_ControlHash: 1964396721
     m_PrefName: Preview_TilemapBrushInspector
-  m_Palette: {fileID: 3435331046766072181, guid: 0d13aad8c45b24410bcd35a10c71ae6c,
+  m_Palette: {fileID: 4906026917654581277, guid: 5034698e2c41f468abe7e8d075e1dbb1,
     type: 3}
 --- !u!114 &22
 MonoBehaviour:
@@ -1670,20 +1670,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites/Level
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 55
   m_LastFolders:
-  - Assets/Sprites/Level
+  - Assets/Prefabs
   m_LastFoldersGridSize: 55
   m_LastProjectPath: /Users/henning/Videospielfirma/4 Week Game/Super Basic Shit
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 40590000
-    m_LastClickedID: 22848
-    m_ExpandedIDs: 00000000e24b0000684e00006a4e00003659000000ca9a3b
+    m_SelectedIDs: aa5b0000
+    m_LastClickedID: 23466
+    m_ExpandedIDs: 000000000e4c0000a64e0000a84e0000b65b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1711,7 +1711,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 877}
     m_SelectedIDs: c8490000
     m_LastClickedID: 18888
-    m_ExpandedIDs: 00000000e24b0000684e00006a4e000000ca9a3b
+    m_ExpandedIDs: 000000000e4c0000a64e0000a84e0000b65b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
