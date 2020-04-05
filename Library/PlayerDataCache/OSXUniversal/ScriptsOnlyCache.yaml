@@ -50,7 +50,6 @@ ScriptsOnlyBuild:
     - UnityEngine.U2D.PixelPerfectCamera
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -1039,7 +1038,7 @@ ScriptsOnlyBuild:
     className: CinemachineTrackedDolly
   - hash:
       serializedVersion: 2
-      Hash: 6bc68d919199e7964dc7e17617e90643
+      Hash: a97fef5ef97d2cc46aa9ce892ac76cdb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MusicPlayer
@@ -1767,4 +1766,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Start.unity
   - Assets/Scenes/Level.unity
-  playerPath: /Users/henning/Desktop/200405_Beta.app
+  playerPath: /Users/henning/Desktop/Super Basic Man.app

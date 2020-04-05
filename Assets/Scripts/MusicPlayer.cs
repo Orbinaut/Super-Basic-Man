@@ -40,6 +40,8 @@ public class MusicPlayer : MonoBehaviour
     private FMOD.Studio.EventInstance endingMusic;
     private FMOD.Studio.EventInstance gemstoneSound;
 
+    public BoxCollider2D myCollider;
+
     void Start()
     {
         GameObject player = GameObject.FindWithTag("Player");
@@ -68,6 +70,7 @@ public class MusicPlayer : MonoBehaviour
             music.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             endingMusic.start();
             Invoke("ShowEndMessage", 8.7f);
+            myCollider.enabled = false;
         }
     }
 

@@ -136,6 +136,24 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-9109198588704231922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/4 Week Game.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD Session/4 Week Game/Build/Desktop/4 Week Game.bank
+  SubDir: 
+  lastModified: 637217193520000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-9105465784013734338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,7 +403,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-8952109512903768407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -399,6 +417,23 @@ MonoBehaviour:
   m_Name: parameter:/Music Old/Night
   m_EditorClassIdentifier: 
   Name: Night
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-8944965186936651920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music Old/Retro
+  m_EditorClassIdentifier: 
+  Name: Retro
   Min: 0
   Max: 1
   Default: 0
@@ -556,7 +591,7 @@ MonoBehaviour:
   lastModified: 637216671180000000
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-8803938051378588940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -604,6 +639,23 @@ MonoBehaviour:
   m_Name: parameter:/Land/TestParameter
   m_EditorClassIdentifier: 
   Name: TestParameter
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-8789834214669459937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Dark Location
+  m_EditorClassIdentifier: 
+  Name: Dark Location
   Min: 0
   Max: 1
   Default: 0
@@ -795,7 +847,7 @@ MonoBehaviour:
   Path: event:/Weapon/Ricochet
   guid: 4233bc580487b74ba3bf665e65cdd023
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -904,7 +956,7 @@ MonoBehaviour:
   Path: event:/Items/Coin
   guid: 01253bce6fc81c42aa8a0b2a04413c1b
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1054,6 +1106,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-8559387962950606064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Night
+  m_EditorClassIdentifier: 
+  Name: Night
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-8541658180454360078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1123,6 +1192,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-8468784683548808404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Daytime/Night
+  m_EditorClassIdentifier: 
+  Name: Night
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-8468021477263033840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1378,7 +1464,7 @@ MonoBehaviour:
   Path: event:/Items/Crate Move
   guid: 6b4d5352d958b8468979bb2987262ce2
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2816,6 +2902,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-7497690622614835818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Waterfall/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-7480015325259613225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3902,7 +4005,7 @@ MonoBehaviour:
   Path: event:/Weapon/Arrow Ricochet
   guid: c5835e82b37c3b41bfd5662407e1b614
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -4032,6 +4135,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-6617825876350584885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Land/TestParameter
+  m_EditorClassIdentifier: 
+  Name: TestParameter
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-6614302490449165304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4099,7 +4219,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-6590537136290494739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5281,14 +5401,14 @@ MonoBehaviour:
   Path: event:/Atmos/Elevator
   guid: 86ba9012ed65914ebd3991012455e677
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 8812
+  Length: 8687
 --- !u!114 &-6071723834894364867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5830,7 +5950,7 @@ MonoBehaviour:
   Path: event:/Weapon/Arrow
   guid: d126eb87e7c5424e99c7710634331976
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -6129,6 +6249,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-5471714102999932484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Night
+  m_EditorClassIdentifier: 
+  Name: Night
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-5471421355355233084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6438,6 +6575,23 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &-5263268964868776017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music Old/Night
+  m_EditorClassIdentifier: 
+  Name: Night
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-5248605009464968532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6494,14 +6648,14 @@ MonoBehaviour:
   Path: event:/UI/Music
   guid: 6246346b6026694ea60ac1ce4a031844
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 7092183697767282798}
-  - {fileID: 3974262985816871369}
-  - {fileID: 7629005350987317665}
+  - {fileID: -5471714102999932484}
+  - {fileID: 8601316174020103892}
+  - {fileID: -1525455422778914316}
   MinDistance: 0
   MaxDistance: 0
   Length: 171426
@@ -8067,7 +8221,7 @@ MonoBehaviour:
   Path: event:/Player/Jump
   guid: 498c31746cf49844b12e7b961d3bd1b9
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -8246,6 +8400,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-4343165797300798649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Retro New
+  m_EditorClassIdentifier: 
+  Name: Retro New
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &-4330686184025484481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8283,7 +8454,7 @@ MonoBehaviour:
   Path: event:/Items/Ammo
   guid: 378c0b522dd54e4fb72b3a5d717cead5
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -8666,7 +8837,7 @@ MonoBehaviour:
   Path: event:/Items/Key
   guid: b6ae19cbbbbac14b807244ac9cd6ba3a
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -9458,7 +9629,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-3659942043320146274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9906,7 +10077,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-3407183896600179354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10094,7 +10265,7 @@ MonoBehaviour:
   Path: event:/Enemies/Skull
   guid: f66249dc20af604da552502409482688
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -10152,7 +10323,7 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-3304544824314482820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10442,12 +10613,12 @@ MonoBehaviour:
   Path: event:/Enemies/Enemy Robot
   guid: 23b7578f5981f142bfe8319d0dade86c
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -3674027184727636448}
+  - {fileID: 2493345984981760124}
   MinDistance: 1
   MaxDistance: 20
   Length: 1630
@@ -10660,12 +10831,12 @@ MonoBehaviour:
   Path: event:/Enemies/Enemy Square 1
   guid: 5ef56a1c6ef2c54297b39ebfd6323a33
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 1354269669946598003}
+  - {fileID: 4819686961826530047}
   MinDistance: 1
   MaxDistance: 20
   Length: 1187
@@ -10684,7 +10855,7 @@ MonoBehaviour:
   Path: event:/Items/Crate Explode
   guid: 06b5060cce8d8c45a7a004fef7edc6a0
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -11251,7 +11422,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-2662514058288996548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11360,7 +11531,7 @@ MonoBehaviour:
   Path: event:/Enemies/Canon
   guid: 818204a6e05c6a48b8dd2cea67c0339d
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -11781,7 +11952,7 @@ MonoBehaviour:
   Path: event:/UI/Gemstone
   guid: 208ebf92acaffa48a5024edd152c5536
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -12018,6 +12189,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-2282435208420928586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Waterfall/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-2280248355577931029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12118,7 +12306,7 @@ MonoBehaviour:
   Path: event:/Atmos/Water Splash
   guid: 616349a52e491b40b90abb2ca91a2c15
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -12386,6 +12574,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 877
+--- !u!114 &-2109061395195526433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Enemy Square 2/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-2093124738715163397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12694,7 +12899,7 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-1928359392548689740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13409,6 +13614,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-1525455422778914316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Retro New
+  m_EditorClassIdentifier: 
+  Name: Retro New
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &-1519367516718647500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13782,7 +14004,7 @@ MonoBehaviour:
   Path: event:/Player/Dead
   guid: 0fac9b753910d145bdb228d61a0de9e7
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -13806,7 +14028,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-1309938183843078403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13856,12 +14078,12 @@ MonoBehaviour:
   Path: event:/Player/Land
   guid: b0ed5b06e3c0374e861e922eb758d11b
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 3758766093799034086}
+  - {fileID: 8824123268402659281}
   MinDistance: 0
   MaxDistance: 0
   Length: 875
@@ -13932,7 +14154,7 @@ MonoBehaviour:
   Path: event:/UI/Intro Music
   guid: 5adc2b9c79e20a44b116079dcca46fb8
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -14927,6 +15149,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-687221306931195902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Enemy Square 2/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-665713049712713408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15535,7 +15774,7 @@ MonoBehaviour:
   Path: event:/Weapon/Bouncer 2D
   guid: 41d7f28d0e188a4bb9baa87c06e85070
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -15920,7 +16159,7 @@ MonoBehaviour:
   Path: event:/Weapon/Shot
   guid: 10ff315d05948d4da9b0396f11fcbee8
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -15995,12 +16234,12 @@ MonoBehaviour:
   Path: event:/Atmos/Waterfall
   guid: fe8c7f75fec84e4d954ec79b7dbaa7e9
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -8953362569435094397}
+  - {fileID: -2282435208420928586}
   MinDistance: 1
   MaxDistance: 20
   Length: 6614
@@ -16351,7 +16590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 972186183342803847}
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   EditorEvents:
   - {fileID: -8633938474487171697}
   - {fileID: -2960391668078528110}
@@ -16394,10 +16633,10 @@ MonoBehaviour:
   - {fileID: -2388592331646774707}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   StringsBanks:
   - {fileID: 972186183342803847}
-  stringsBankWriteTime: 637216671180000000
+  stringsBankWriteTime: 637217193520000000
   cacheVersion: 3
 --- !u!114 &11984237569511959
 MonoBehaviour:
@@ -17703,6 +17942,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &693310036715167969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music New/Retro New
+  m_EditorClassIdentifier: 
+  Name: Retro New
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &705711497449801743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18035,6 +18291,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &937512801478758689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lava/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &946592420120060262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18083,7 +18356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMOD Session/4 Week Game/Build/Desktop/4 Week Game.strings.bank
   SubDir: 
-  lastModified: 637216671180000000
+  lastModified: 637217193520000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -18867,7 +19140,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &1356845078427903644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19448,6 +19721,23 @@ MonoBehaviour:
   lastModified: 637209434740000000
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &1674432759257676741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Enemy Robot/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 0
 --- !u!114 &1679540107420894648
 MonoBehaviour:
@@ -20051,6 +20341,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &2021704124747078724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Daytime/Night
+  m_EditorClassIdentifier: 
+  Name: Night
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &2032144669258618556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20158,7 +20465,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &2127026719758334464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20242,7 +20549,7 @@ MonoBehaviour:
   Path: event:/UI/Message
   guid: 5805e20af5cae940a4223ac266057abd
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -20455,6 +20762,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &2302393852513126803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Enemy Square 1/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &2302802566503338402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20607,7 +20931,7 @@ MonoBehaviour:
   Path: event:/Player/Hurt
   guid: ba707861cccb6144905572ea89e56c2b
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -20851,6 +21175,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &2493345984981760124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Enemy Robot/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &2515974445160013245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20935,7 +21276,7 @@ MonoBehaviour:
   Path: event:/UI/Achievement
   guid: 2a52678d44e81a4e8e8f6863fb32df9e
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -21024,6 +21365,23 @@ MonoBehaviour:
   m_Name: parameter:/Music Old/Retro
   m_EditorClassIdentifier: 
   Name: Retro
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &2588816318838095245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lava/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
   Min: 0
   Max: 1
   Default: 0
@@ -21297,6 +21655,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &2728800307988890724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music Old/Night
+  m_EditorClassIdentifier: 
+  Name: Night
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &2750676110881971088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21559,6 +21934,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 715
+--- !u!114 &2961642310070318122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/4 Week Game.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD Session/4 Week Game/Build/Desktop/4 Week Game.bank
+  SubDir: 
+  lastModified: 637217192310000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &2975338557896942376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23015,7 +23408,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &3764850646367507124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23424,7 +23817,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &3981637616489033878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24392,6 +24785,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &4471259485364041178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music New/Retro New
+  m_EditorClassIdentifier: 
+  Name: Retro New
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &4509457351227790165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24984,7 +25394,7 @@ MonoBehaviour:
   Path: event:/UI/Door Opens
   guid: 2d42c0cf1875114dadcb31f4503c2bad
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -25100,6 +25510,23 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &4819686961826530047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Enemy Square 1/Distance
+  m_EditorClassIdentifier: 
+  Name: Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &4822196656288182623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26413,6 +26840,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &5603958238386174141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music Old/Cave
+  m_EditorClassIdentifier: 
+  Name: Cave
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &5607052345938378386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26758,6 +27202,23 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &5801669868254051265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music Old/Retro
+  m_EditorClassIdentifier: 
+  Name: Retro
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &5804945983274036849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27065,6 +27526,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &5898896815065095890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music New/Dark Location 2
+  m_EditorClassIdentifier: 
+  Name: Dark Location 2
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &5909590571830619132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27149,7 +27627,7 @@ MonoBehaviour:
   Path: event:/Weapon/Bouncer
   guid: d5a3199d4eed9843b32f7811844e1b67
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -27263,12 +27741,12 @@ MonoBehaviour:
   Path: event:/Enemies/Enemy Square 2
   guid: ba6127af10d23c4b91c9eec88b813b27
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -2690858368795144514}
+  - {fileID: -687221306931195902}
   MinDistance: 1
   MaxDistance: 20
   Length: 1415
@@ -27458,15 +27936,15 @@ MonoBehaviour:
   Path: event:/Atmos/Lava
   guid: 08fecec5ac2f4348a34997399462d4e2
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -3412254996114567894}
+  - {fileID: 937512801478758689}
   MinDistance: 1
   MaxDistance: 20
-  Length: 3572
+  Length: 3565
 --- !u!114 &6115636467763011748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27669,14 +28147,14 @@ MonoBehaviour:
   Path: event:/UI/Music New
   guid: 763f1591b0ca944e996989a057ec1b15
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 8377398377625911965}
-  - {fileID: -3307740086352146433}
-  - {fileID: -1957552419861310847}
+  - {fileID: 6385237040165520976}
+  - {fileID: 693310036715167969}
+  - {fileID: 6235346705781914401}
   MinDistance: 0
   MaxDistance: 0
   Length: 171428
@@ -27784,6 +28262,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &6235346705781914401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music New/Dark Location 2
+  m_EditorClassIdentifier: 
+  Name: Dark Location 2
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &6250705638421960230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28023,6 +28518,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &6385237040165520976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music New/Night
+  m_EditorClassIdentifier: 
+  Name: Night
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &6387233258921038242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28563,7 +29075,7 @@ MonoBehaviour:
   Path: event:/UI/Mouse Click
   guid: b1471aba18edd54dba4f597b3542921b
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -28644,7 +29156,7 @@ MonoBehaviour:
   Path: event:/UI/Exchange
   guid: e5ae6e12b6d31e44bfda4a7080053577
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -28718,12 +29230,12 @@ MonoBehaviour:
   Path: event:/Atmos/Daytime
   guid: f47cb542ff9aa44cb2f6007a9de3312b
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 2094552235231513797}
+  - {fileID: -8468784683548808404}
   MinDistance: 0
   MaxDistance: 0
   Length: 37802
@@ -29280,7 +29792,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &7108155995975428389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29347,7 +29859,7 @@ MonoBehaviour:
   Path: event:/Player/Footsteps
   guid: 4ddc8b265a3a244da1b5fef21bbaaa01
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -29542,14 +30054,14 @@ MonoBehaviour:
   Path: event:/UI/Music Old
   guid: e70d6be6619e4147b52bc6af742284e7
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 7410867545502257443}
-  - {fileID: -1322573045689994771}
-  - {fileID: -6594293307240642370}
+  - {fileID: 5603958238386174141}
+  - {fileID: 2728800307988890724}
+  - {fileID: 5801669868254051265}
   MinDistance: 0
   MaxDistance: 0
   Length: 246857
@@ -29877,7 +30389,7 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &7414022929752636290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30240,7 +30752,7 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &7645495842800393277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30948,6 +31460,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &8177978384054846540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music New/Night
+  m_EditorClassIdentifier: 
+  Name: Night
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &8188799968487974586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31039,7 +31568,7 @@ MonoBehaviour:
   Path: event:/Enemies/Bomb Ignite
   guid: c2d1b166e093e94993d8b0c2cc4c5d9e
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -31394,7 +31923,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &8390826980351101753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31529,7 +32058,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemy Destroy
   guid: 7ca0449401f58049ab3a8881174ba0b4
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -31749,6 +32278,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &8601316174020103892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Dark Location
+  m_EditorClassIdentifier: 
+  Name: Dark Location
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &8628963998077206384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31905,6 +32451,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &8731995340684696365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music Old/Cave
+  m_EditorClassIdentifier: 
+  Name: Cave
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &8733757394647311863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32029,6 +32592,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &8824123268402659281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Land/TestParameter
+  m_EditorClassIdentifier: 
+  Name: TestParameter
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &8827550111343166266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32061,7 +32641,7 @@ MonoBehaviour:
   Path: event:/UI/Ending
   guid: 8cbf94bdbb1e6343baaf12377b1843c3
   Banks:
-  - {fileID: -8820388413465463701}
+  - {fileID: -9109198588704231922}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1

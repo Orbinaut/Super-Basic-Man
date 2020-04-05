@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 5171593162539809444}
   - component: {fileID: 5171593162539809445}
   - component: {fileID: 8028148121276125708}
+  - component: {fileID: 1963465049656872466}
   m_Layer: 0
   m_Name: Bouncer
   m_TagString: Bouncer
@@ -187,6 +188,22 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &1963465049656872466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5171593162539809446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de33d91bfa37744d29d5575a3621c96a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 1911277947194426647, guid: abfe1fffd42cb40f7accde94ab288dfc, type: 3}
+  maxHealth: 1
+  minHealth: 1
 --- !u!1 &8689043137280958847
 GameObject:
   m_ObjectHideFlags: 0
