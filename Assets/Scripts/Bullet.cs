@@ -14,10 +14,14 @@ public class Bullet : MonoBehaviour
         rb.velocity = transform.right * speed;
     }
 
-    void OnTriggerEnter2D(Collider2D collider){
-        Instantiate(impact, transform.position, transform.rotation);
-        Destroy(gameObject);
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!other.gameObject.CompareTag("Music"))
+        {
+            Instantiate(impact, transform.position, transform.rotation);
+            Destroy(gameObject);
         }
+    }
 
     void OnBecameInvisible(){
         Destroy(gameObject);

@@ -649,8 +649,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRetro: 0
   isNight: 0
-  inCave: 0
+  darkArea: 0
+  endMessage: {fileID: 0}
+  player: {fileID: 0}
+  endingBlink: {fileID: 0}
+  pauseObject: {fileID: 0}
+  transitionLeft: {fileID: 0}
+  transitionRight: {fileID: 0}
+  gemstone: {fileID: 0}
+  transitionTime: 1
+  playerColliderFeet: {fileID: 0}
+  playerColliderHead: {fileID: 0}
+  ambienceOff: 0
   musicEvent: event:/UI/Intro Music
+  endingMusicEvent: event:/UI/Ending
+  gemstoneSoundEvent: event:/UI/Gemstone
 --- !u!4 &1127187300
 Transform:
   m_ObjectHideFlags: 0
@@ -905,7 +918,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &2035728889
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -964,7 +977,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035728888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.4375, z: 0}
+  m_LocalPosition: {x: 0, y: 2.5625, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

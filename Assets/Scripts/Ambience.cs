@@ -29,7 +29,7 @@ public class Ambience : MonoBehaviour
         }
         daytimeSound = FMODUnity.RuntimeManager.CreateInstance(daytimeSoundEvent);
         daytimeSound.start();
-        Invoke("Nighttime", dayLength - dayLength/5);
+        Invoke("Nighttime", 85f);
     }
 
     void Daytime()
@@ -48,6 +48,10 @@ public class Ambience : MonoBehaviour
     void Update()
     {
         daytimeSound.setParameterByName("Night", Mathf.Lerp(0, 1, Mathf.PingPong(Time.timeSinceLevelLoad * speed, 1.0f)));
+        if (musicScript.ambienceOff)
+        {
+            daytimeSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
     }
 
     private void OnDestroy()

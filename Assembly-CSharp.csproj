@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\CollectStuff.cs" />
     <Compile Include="Assets\Scripts\CreateSomething.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />
+    <Compile Include="Assets\Scripts\Ending.cs" />
     <Compile Include="Assets\Scripts\EnemyBullet.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\InvokeDestroy.cs" />
